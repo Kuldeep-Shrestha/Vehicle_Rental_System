@@ -14,7 +14,7 @@ public class MySqlConnector implements Db {
        try{
            String username="root";
            String password="Sthaku!deep07";
-           String database="hello";
+           String database="Vehicle_Rental_System";
            Connection connection;
            connection=DriverManager.getConnection(
                    "jdbc:mysql://localhost:3306/" + database,username,password
