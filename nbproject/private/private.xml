@@ -6,9 +6,12 @@
             <file>file:/C:/Users/Nitro/OneDrive/Documents/NetBeansProjects/Group4_Vehicle_Rental_System/src/database/Db.java</file>
             <file>file:/C:/Users/Nitro/OneDrive/Documents/NetBeansProjects/Group4_Vehicle_Rental_System/src/database/MySqlConnector.java</file>
             <file>file:/C:/Users/Nitro/OneDrive/Documents/NetBeansProjects/Group4_Vehicle_Rental_System/src/view/forgotPassword.java</file>
+<<<<<<< HEAD
             <file>file:/C:/Users/Nitro/OneDrive/Documents/NetBeansProjects/Group4_Vehicle_Rental_System/src/view/User_Profile.java</file>
             <file>file:/C:/Users/Nitro/OneDrive/Documents/NetBeansProjects/Group4_Vehicle_Rental_System/src/view/Agent_Profile.java</file>
             <file>file:/C:/Users/Nitro/OneDrive/Documents/NetBeansProjects/Group4_Vehicle_Rental_System/src/view/Admin_Profile.java</file>
+=======
+>>>>>>> 7cbd3dbe4bb1ed697e8ac781eea3f8af5c0ef62f
         </group>
     </open-files>
 </project-private>
