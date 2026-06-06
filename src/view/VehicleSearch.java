@@ -8,14 +8,14 @@ package view;
  *
  * @author Apekshya
  */
-public class Dashboard extends javax.swing.JFrame {
+public class VehicleSearch extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Dashboard.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(VehicleSearch.class.getName());
 
     /**
      * Creates new form Dashboard
      */
-    public Dashboard() {
+    public VehicleSearch() {
         initComponents();
     }
 
@@ -90,6 +90,9 @@ public class Dashboard extends javax.swing.JFrame {
         DVRlogo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setExtendedState(6);
+        setPreferredSize(new java.awt.Dimension(400, 300));
+        getContentPane().setLayout(null);
 
         DashBoard.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -121,33 +124,39 @@ public class Dashboard extends javax.swing.JFrame {
         DashBoardLayout.setHorizontalGroup(
             DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(DB, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(MyBookingButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Vehicles, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Profilebutton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Logoutbutton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(MyBookingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Vehicles, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Profilebutton, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(Logoutbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         DashBoardLayout.setVerticalGroup(
             DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DashBoardLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(DB, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(DB, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(MyBookingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(MyBookingButton, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Vehicles, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Vehicles, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Profilebutton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Logoutbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(Profilebutton, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+                .addGap(222, 222, 222)
+                .addComponent(Logoutbutton, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE))
         );
 
+        getContentPane().add(DashBoard);
+        DashBoard.setBounds(0, 96, 200, 378);
+
         TopPart.setBackground(new java.awt.Color(255, 255, 255));
+        TopPart.setMaximumSize(new java.awt.Dimension(9999, 0));
+        TopPart.setMinimumSize(new java.awt.Dimension(0, 90));
+        TopPart.setPreferredSize(new java.awt.Dimension(90, 90));
 
         UserName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         UserName.setText("User");
         UserName.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
 
-        Pfp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/User (2).jpg"))); // NOI18N
+        Pfp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User.jpg"))); // NOI18N
         Pfp.setText("jLabel4");
 
         BAV.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
@@ -162,31 +171,30 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(TopPartLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BAV, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(DashboardNavi))
+                    .addComponent(DashboardNavi)
+                    .addComponent(BAV, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5))
+                .addComponent(UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         TopPartLayout.setVerticalGroup(
             TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TopPartLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(17, 17, 17)
                 .addGroup(TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Pfp))
                     .addGroup(TopPartLayout.createSequentialGroup()
-                        .addGroup(TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Pfp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(23, 23, 23))
-                    .addGroup(TopPartLayout.createSequentialGroup()
-                        .addGap(13, 13, 13)
                         .addComponent(BAV, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(DashboardNavi)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(DashboardNavi)))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
+
+        getContentPane().add(TopPart);
+        TopPart.setBounds(206, 0, 493, 90);
 
         Body.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -271,7 +279,7 @@ public class Dashboard extends javax.swing.JFrame {
                     .addGroup(FilterSectionLayout.createSequentialGroup()
                         .addGap(16, 16, 16)
                         .addComponent(Clearbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         FilterSectionLayout.setVerticalGroup(
             FilterSectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -303,7 +311,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         SearchBar.setText("🔍 Search");
 
-        Sortbybox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sort by :", "Recommended", "Price: Low to High", "Price: High to Low", "Ratings" }));
+        Sortbybox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sort by :", "Recommended", "Price: Low to High", "Price: High to Low", "Ratings", "date" }));
 
         Cars.setBackground(new java.awt.Color(238, 237, 237));
 
@@ -314,7 +322,7 @@ public class Dashboard extends javax.swing.JFrame {
         Select1.setText("Select");
         Select1.addActionListener(this::Select1ActionPerformed);
 
-        CarImg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/bmw (2).jpg"))); // NOI18N
+        CarImg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bmw (2).jpg"))); // NOI18N
         CarImg1.setText("jLabel9");
 
         CarName1.setFont(new java.awt.Font("Segoe UI Historic", 1, 12)); // NOI18N
@@ -369,7 +377,7 @@ public class Dashboard extends javax.swing.JFrame {
                         .addComponent(CarImg1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Car1Stock)
-                        .addGap(0, 6, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(Car1PanelLayout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(Car1PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -468,7 +476,7 @@ public class Dashboard extends javax.swing.JFrame {
                             .addComponent(Car2Img, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Car2Stock)
-                        .addGap(0, 6, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
 
         Car3Panel.setBackground(new java.awt.Color(255, 255, 255));
@@ -478,7 +486,7 @@ public class Dashboard extends javax.swing.JFrame {
         Select3.setText("Select");
         Select3.addActionListener(this::Select3ActionPerformed);
 
-        Car3Img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/pporsche (1).jpg"))); // NOI18N
+        Car3Img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/pporsche (1).jpg"))); // NOI18N
         Car3Img.setText("jLabel9");
 
         Car3Name.setFont(new java.awt.Font("Segoe UI Historic", 1, 12)); // NOI18N
@@ -548,7 +556,7 @@ public class Dashboard extends javax.swing.JFrame {
                                     .addComponent(jLabel23))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel26)))
-                        .addGap(0, 6, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout CarsLayout = new javax.swing.GroupLayout(Cars);
@@ -577,7 +585,7 @@ public class Dashboard extends javax.swing.JFrame {
                         .addComponent(Car2Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Car3Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 17, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -608,14 +616,14 @@ public class Dashboard extends javax.swing.JFrame {
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(11, 11, 11)
                 .addGroup(bodypanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(FilterSection, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(FilterSection, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(bodypanelLayout.createSequentialGroup()
                         .addGroup(bodypanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(SearchBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Sortbybox, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Cars, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(33, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout BodyLayout = new javax.swing.GroupLayout(Body);
@@ -635,48 +643,32 @@ public class Dashboard extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        Logo.setBackground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(Body);
+        Body.setBounds(206, 96, 492, 378);
 
-        DVRlogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/Gemini_Generated_Image_hyxex8hyxex8hyxe (3) (1).jpg"))); // NOI18N
-        DVRlogo.setText("jLabel1");
+        Logo.setBackground(new java.awt.Color(255, 255, 255));
+        Logo.setMaximumSize(new java.awt.Dimension(200, 90));
+        Logo.setMinimumSize(new java.awt.Dimension(200, 90));
+        Logo.setPreferredSize(new java.awt.Dimension(200, 90));
+
+        DVRlogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/LOGO .jpg"))); // NOI18N
+        DVRlogo.setPreferredSize(new java.awt.Dimension(200, 90));
 
         javax.swing.GroupLayout LogoLayout = new javax.swing.GroupLayout(Logo);
         Logo.setLayout(LogoLayout);
         LogoLayout.setHorizontalGroup(
             LogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(DVRlogo, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addGroup(LogoLayout.createSequentialGroup()
+                .addComponent(DVRlogo, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addContainerGap())
         );
         LogoLayout.setVerticalGroup(
             LogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(DVRlogo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Logo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(DashBoard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TopPart, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Body, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(TopPart, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Logo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Body, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(DashBoard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-        );
+        getContentPane().add(Logo);
+        Logo.setBounds(0, 0, 200, 90);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -731,7 +723,7 @@ public class Dashboard extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Dashboard().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new VehicleSearch().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
