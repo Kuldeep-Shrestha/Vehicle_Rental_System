@@ -86,12 +86,20 @@ public class VehicleSearch extends javax.swing.JFrame {
         jLabel23 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         Stock3 = new javax.swing.JLabel();
+        Car4Panel = new javax.swing.JPanel();
+        Select7 = new javax.swing.JButton();
+        Car3Img3 = new javax.swing.JLabel();
+        Car3Name3 = new javax.swing.JLabel();
+        Car3Price3 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        Stock6 = new javax.swing.JLabel();
         Logo = new javax.swing.JPanel();
         DVRlogo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setExtendedState(6);
-        setPreferredSize(new java.awt.Dimension(400, 300));
         getContentPane().setLayout(null);
 
         DashBoard.setBackground(new java.awt.Color(255, 255, 255));
@@ -133,19 +141,19 @@ public class VehicleSearch extends javax.swing.JFrame {
             DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DashBoardLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(DB, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+                .addComponent(DB, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(MyBookingButton, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+                .addComponent(MyBookingButton, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Vehicles, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+                .addComponent(Vehicles, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Profilebutton, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+                .addComponent(Profilebutton, javax.swing.GroupLayout.DEFAULT_SIZE, 66, Short.MAX_VALUE)
                 .addGap(222, 222, 222)
-                .addComponent(Logoutbutton, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE))
+                .addComponent(Logoutbutton, javax.swing.GroupLayout.DEFAULT_SIZE, 66, Short.MAX_VALUE))
         );
 
         getContentPane().add(DashBoard);
-        DashBoard.setBounds(0, 96, 200, 378);
+        DashBoard.setBounds(0, 96, 200, 570);
 
         TopPart.setBackground(new java.awt.Color(255, 255, 255));
         TopPart.setMaximumSize(new java.awt.Dimension(9999, 0));
@@ -173,7 +181,7 @@ public class VehicleSearch extends javax.swing.JFrame {
                 .addGroup(TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(DashboardNavi)
                     .addComponent(BAV, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 746, Short.MAX_VALUE)
                 .addComponent(Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -194,7 +202,7 @@ public class VehicleSearch extends javax.swing.JFrame {
         );
 
         getContentPane().add(TopPart);
-        TopPart.setBounds(206, 0, 493, 90);
+        TopPart.setBounds(206, 0, 1070, 90);
 
         Body.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -274,12 +282,12 @@ public class VehicleSearch extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(AutomaticCB, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(FilterSectionLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(ManualCB, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(49, 49, 49)
+                        .addComponent(Clearbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(FilterSectionLayout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(Clearbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addComponent(ManualCB, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         FilterSectionLayout.setVerticalGroup(
             FilterSectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -302,11 +310,11 @@ public class VehicleSearch extends javax.swing.JFrame {
                 .addComponent(AllCB)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(AutomaticCB)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ManualCB)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(Clearbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(24, 24, 24))
+                .addGap(23, 23, 23))
         );
 
         SearchBar.setText("🔍 Search");
@@ -525,7 +533,7 @@ public class VehicleSearch extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel23))
                     .addComponent(jLabel26))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 469, Short.MAX_VALUE)
                 .addGroup(Car3PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Car3Price, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(Select3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -556,7 +564,87 @@ public class VehicleSearch extends javax.swing.JFrame {
                                     .addComponent(jLabel23))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel26)))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGap(0, 12, Short.MAX_VALUE))))
+        );
+
+        Car4Panel.setBackground(new java.awt.Color(255, 255, 255));
+
+        Select7.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        Select7.setForeground(new java.awt.Color(153, 204, 255));
+        Select7.setText("Select");
+        Select7.addActionListener(this::Select7ActionPerformed);
+
+        Car3Img3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/pporsche (1).jpg"))); // NOI18N
+        Car3Img3.setText("jLabel9");
+
+        Car3Name3.setFont(new java.awt.Font("Segoe UI Historic", 1, 12)); // NOI18N
+        Car3Name3.setText("Porsche 711 GT6");
+
+        Car3Price3.setFont(new java.awt.Font("Verdana", 1, 14)); // NOI18N
+        Car3Price3.setText("80$/day");
+
+        jLabel36.setText("⚙️ Manual");
+
+        jLabel37.setText("💺 4 seats");
+
+        jLabel38.setText("❄️ AC");
+
+        Stock6.setBackground(new java.awt.Color(204, 255, 204));
+        Stock6.setForeground(new java.awt.Color(48, 188, 76));
+        Stock6.setText("InStock");
+        Stock6.setOpaque(true);
+
+        javax.swing.GroupLayout Car4PanelLayout = new javax.swing.GroupLayout(Car4Panel);
+        Car4Panel.setLayout(Car4PanelLayout);
+        Car4PanelLayout.setHorizontalGroup(
+            Car4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Car4PanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Car4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Car3Img3, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(Car4PanelLayout.createSequentialGroup()
+                        .addGap(6, 6, 6)
+                        .addComponent(Stock6)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(Car4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Car3Name3)
+                    .addGroup(Car4PanelLayout.createSequentialGroup()
+                        .addComponent(jLabel36)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel37))
+                    .addComponent(jLabel38))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(Car4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Car3Price3, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(Select7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+        Car4PanelLayout.setVerticalGroup(
+            Car4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Car4PanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Car4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Car4PanelLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(Car3Price3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Select7)
+                        .addContainerGap())
+                    .addGroup(Car4PanelLayout.createSequentialGroup()
+                        .addGroup(Car4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(Car4PanelLayout.createSequentialGroup()
+                                .addComponent(Car3Img3, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Stock6, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(Car4PanelLayout.createSequentialGroup()
+                                .addComponent(Car3Name3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(Car4PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel36)
+                                    .addComponent(jLabel37))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel38)))
+                        .addGap(0, 9, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout CarsLayout = new javax.swing.GroupLayout(Cars);
@@ -568,7 +656,10 @@ public class VehicleSearch extends javax.swing.JFrame {
                 .addGroup(CarsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Car1Panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Car2Panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Car3Panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CarsLayout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(Car3Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Car4Panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -578,15 +669,16 @@ public class VehicleSearch extends javax.swing.JFrame {
             .addGroup(CarsLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(CarsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 461, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(CarsLayout.createSequentialGroup()
                         .addComponent(Car1Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Car2Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Car3Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addGap(18, 18, 18)
+                        .addComponent(Car4Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout bodypanelLayout = new javax.swing.GroupLayout(bodypanel);
@@ -595,34 +687,33 @@ public class VehicleSearch extends javax.swing.JFrame {
             bodypanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bodypanelLayout.createSequentialGroup()
                 .addContainerGap()
+                .addGroup(bodypanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(FilterSection, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(bodypanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(bodypanelLayout.createSequentialGroup()
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(bodypanelLayout.createSequentialGroup()
-                        .addComponent(FilterSection, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bodypanelLayout.createSequentialGroup()
+                        .addComponent(SearchBar, javax.swing.GroupLayout.DEFAULT_SIZE, 687, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(bodypanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(bodypanelLayout.createSequentialGroup()
-                                .addComponent(SearchBar)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Sortbybox, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(Cars, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(Sortbybox, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Cars, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         bodypanelLayout.setVerticalGroup(
             bodypanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bodypanelLayout.createSequentialGroup()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
-                .addGroup(bodypanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(FilterSection, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(bodypanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bodypanelLayout.createSequentialGroup()
+                        .addGap(28, 28, 28)
                         .addGroup(bodypanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(SearchBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Sortbybox, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Cars, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(Cars, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(bodypanelLayout.createSequentialGroup()
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(FilterSection, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -632,19 +723,18 @@ public class VehicleSearch extends javax.swing.JFrame {
             BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BodyLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(bodypanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(bodypanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         BodyLayout.setVerticalGroup(
             BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BodyLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BodyLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(bodypanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         getContentPane().add(Body);
-        Body.setBounds(206, 96, 492, 378);
+        Body.setBounds(206, 96, 1070, 550);
 
         Logo.setBackground(new java.awt.Color(255, 255, 255));
         Logo.setMaximumSize(new java.awt.Dimension(200, 90));
@@ -659,7 +749,7 @@ public class VehicleSearch extends javax.swing.JFrame {
         LogoLayout.setHorizontalGroup(
             LogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(LogoLayout.createSequentialGroup()
-                .addComponent(DVRlogo, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addComponent(DVRlogo, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE)
                 .addContainerGap())
         );
         LogoLayout.setVerticalGroup(
@@ -701,6 +791,10 @@ public class VehicleSearch extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Select3ActionPerformed
 
+    private void Select7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Select7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Select7ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -733,20 +827,38 @@ public class VehicleSearch extends javax.swing.JFrame {
     private javax.swing.JLabel BAV;
     private javax.swing.JPanel Body;
     private javax.swing.JPanel Car1Panel;
+    private javax.swing.JPanel Car1Panel1;
     private javax.swing.JLabel Car1Price;
+    private javax.swing.JLabel Car1Price1;
     private javax.swing.JLabel Car1Stock;
+    private javax.swing.JLabel Car1Stock1;
     private javax.swing.JLabel Car2Img;
     private javax.swing.JLabel Car2Name;
     private javax.swing.JPanel Car2Panel;
     private javax.swing.JLabel Car2Price;
     private javax.swing.JLabel Car2Stock;
     private javax.swing.JLabel Car3Img;
+    private javax.swing.JLabel Car3Img1;
+    private javax.swing.JLabel Car3Img2;
+    private javax.swing.JLabel Car3Img3;
     private javax.swing.JLabel Car3Name;
+    private javax.swing.JLabel Car3Name1;
+    private javax.swing.JLabel Car3Name2;
+    private javax.swing.JLabel Car3Name3;
     private javax.swing.JPanel Car3Panel;
+    private javax.swing.JPanel Car3Panel1;
+    private javax.swing.JPanel Car3Panel2;
     private javax.swing.JLabel Car3Price;
+    private javax.swing.JLabel Car3Price1;
+    private javax.swing.JLabel Car3Price2;
+    private javax.swing.JLabel Car3Price3;
+    private javax.swing.JPanel Car4Panel;
     private javax.swing.JLabel CarImg1;
+    private javax.swing.JLabel CarImg2;
     private javax.swing.JLabel CarName1;
+    private javax.swing.JLabel CarName2;
     private javax.swing.JPanel Cars;
+    private javax.swing.JPanel Cars1;
     private javax.swing.JButton Clearbutton;
     private javax.swing.JButton DB;
     private javax.swing.JLabel DVRlogo;
@@ -765,8 +877,15 @@ public class VehicleSearch extends javax.swing.JFrame {
     private javax.swing.JButton Select1;
     private javax.swing.JButton Select2;
     private javax.swing.JButton Select3;
+    private javax.swing.JButton Select4;
+    private javax.swing.JButton Select5;
+    private javax.swing.JButton Select6;
+    private javax.swing.JButton Select7;
     private javax.swing.JComboBox<String> Sortbybox;
     private javax.swing.JLabel Stock3;
+    private javax.swing.JLabel Stock4;
+    private javax.swing.JLabel Stock5;
+    private javax.swing.JLabel Stock6;
     private javax.swing.JCheckBox SuvCB;
     private javax.swing.JPanel TopPart;
     private javax.swing.JLabel UserName;
@@ -781,11 +900,24 @@ public class VehicleSearch extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollBar jScrollBar1;
+    private javax.swing.JScrollBar jScrollBar2;
     private javax.swing.JSlider jSlider1;
     // End of variables declaration//GEN-END:variables
 }
