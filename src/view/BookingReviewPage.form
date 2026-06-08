@@ -95,9 +95,9 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel18" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Component id="jLabel19" min="-2" max="-2" attributes="0"/>
@@ -439,9 +439,9 @@
                               <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="Date" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="datetwo" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="Date" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
@@ -451,7 +451,7 @@
                                   </Group>
                                   <Component id="jPanel10" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
