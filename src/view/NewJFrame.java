@@ -40,7 +40,7 @@ public class NewJFrame extends javax.swing.JFrame {
         MyBookingsTxt = new javax.swing.JLabel();
         Text = new javax.swing.JLabel();
         TabbedBody = new javax.swing.JTabbedPane();
-        jPanel2 = new javax.swing.JPanel();
+        UpcommingTab = new javax.swing.JPanel();
         CarDetailPanel = new javax.swing.JPanel();
         CarPicture = new javax.swing.JLabel();
         CarName = new javax.swing.JLabel();
@@ -93,8 +93,6 @@ public class NewJFrame extends javax.swing.JFrame {
         Modify_Booking = new javax.swing.JButton();
         Download_Invoice = new javax.swing.JButton();
         Cancel_Booking = new javax.swing.JButton();
-        Completed_Panel = new javax.swing.JPanel();
-        Cancelled_Panel = new javax.swing.JPanel();
         Agent_Pfp = new javax.swing.JLabel();
         Agent_Name = new javax.swing.JLabel();
 
@@ -179,9 +177,9 @@ public class NewJFrame extends javax.swing.JFrame {
         TabbedBody.setBackground(new java.awt.Color(255, 255, 255));
         TabbedBody.setForeground(new java.awt.Color(204, 204, 204));
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        jPanel2.setForeground(new java.awt.Color(51, 0, 255));
+        UpcommingTab.setBackground(new java.awt.Color(255, 255, 255));
+        UpcommingTab.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        UpcommingTab.setForeground(new java.awt.Color(51, 0, 255));
 
         CarDetailPanel.setBackground(new java.awt.Color(255, 255, 255));
         CarDetailPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
@@ -339,20 +337,13 @@ public class NewJFrame extends javax.swing.JFrame {
         CustomerDetailsLayout.setHorizontalGroup(
             CustomerDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CustomerDetailsLayout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(CustomerDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(CustomerDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(CustomerDetailsLayout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(Customer_Name, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(CustomerDetailsLayout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(Customer_mail, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(CustomerDetailsLayout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(Customer_Phone, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)))
-                    .addGroup(CustomerDetailsLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Customer_Name, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Customer_mail, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Customer_Phone, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE))
+                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(26, Short.MAX_VALUE))
         );
         CustomerDetailsLayout.setVerticalGroup(
@@ -425,18 +416,16 @@ public class NewJFrame extends javax.swing.JFrame {
         RentalDurationPanelLayout.setHorizontalGroup(
             RentalDurationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RentalDurationPanelLayout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(RentalDurationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(RentalDurationPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(RentalDuration, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(RentalDurationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(RentalDuration, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Rental_Date, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE))
+                        .addGap(76, 76, 76))
                     .addGroup(RentalDurationPanelLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Rental_Date, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)))
-                .addGap(76, 76, 76))
-            .addGroup(RentalDurationPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Rental_DurationTXT, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(Rental_DurationTXT, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         RentalDurationPanelLayout.setVerticalGroup(
             RentalDurationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -654,28 +643,28 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout UpcommingTabLayout = new javax.swing.GroupLayout(UpcommingTab);
+        UpcommingTab.setLayout(UpcommingTabLayout);
+        UpcommingTabLayout.setHorizontalGroup(
+            UpcommingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(UpcommingTabLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(UpcommingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(CarDetailPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(UpcommingTabLayout.createSequentialGroup()
+                        .addGroup(UpcommingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(BookingDetailsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(BookingDetailsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addGroup(UpcommingTabLayout.createSequentialGroup()
                                 .addComponent(PricePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(ActionsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        UpcommingTabLayout.setVerticalGroup(
+            UpcommingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(UpcommingTabLayout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(CarDetailPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -683,39 +672,13 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(BookingDetailsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(UpcommingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(ActionsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(PricePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(49, Short.MAX_VALUE))
         );
 
-        TabbedBody.addTab("Upcomming", jPanel2);
-
-        javax.swing.GroupLayout Completed_PanelLayout = new javax.swing.GroupLayout(Completed_Panel);
-        Completed_Panel.setLayout(Completed_PanelLayout);
-        Completed_PanelLayout.setHorizontalGroup(
-            Completed_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 812, Short.MAX_VALUE)
-        );
-        Completed_PanelLayout.setVerticalGroup(
-            Completed_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 573, Short.MAX_VALUE)
-        );
-
-        TabbedBody.addTab("Completed", Completed_Panel);
-
-        javax.swing.GroupLayout Cancelled_PanelLayout = new javax.swing.GroupLayout(Cancelled_Panel);
-        Cancelled_Panel.setLayout(Cancelled_PanelLayout);
-        Cancelled_PanelLayout.setHorizontalGroup(
-            Cancelled_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 812, Short.MAX_VALUE)
-        );
-        Cancelled_PanelLayout.setVerticalGroup(
-            Cancelled_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 573, Short.MAX_VALUE)
-        );
-
-        TabbedBody.addTab("Cancelled", Cancelled_Panel);
+        TabbedBody.addTab("Upcomming", UpcommingTab);
 
         Agent_Pfp.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\download (2).png")); // NOI18N
         Agent_Pfp.setText("jLabel44");
@@ -850,12 +813,10 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel BookingDetailsTxt;
     private javax.swing.JLabel BookingID;
     private javax.swing.JButton Cancel_Booking;
-    private javax.swing.JPanel Cancelled_Panel;
     private javax.swing.JPanel CarDetailPanel;
     private javax.swing.JLabel CarName;
     private javax.swing.JLabel CarPicture;
     private javax.swing.JLabel CarType;
-    private javax.swing.JPanel Completed_Panel;
     private javax.swing.JPanel CustomerDetails;
     private javax.swing.JLabel Customer_Name;
     private javax.swing.JLabel Customer_Phone;
@@ -896,6 +857,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel Text;
     private javax.swing.JLabel TotalAmount;
     private javax.swing.JLabel TotalTxt;
+    private javax.swing.JPanel UpcommingTab;
     private javax.swing.JButton Vehicles;
     private javax.swing.JButton ViewDetailsButton;
     private javax.swing.JLabel jLabel1;
@@ -909,6 +871,5 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
