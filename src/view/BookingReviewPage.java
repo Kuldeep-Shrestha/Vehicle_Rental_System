@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package view;
+package image;
 
 /**
  *
@@ -106,22 +106,22 @@ public class BookingReviewPage extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/987298397564.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/987298397564_1.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/milacnuivsd .png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/milacnuivsd .png"))); // NOI18N
         jLabel3.setText("jLabel3");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/amilanaoiscnhud.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/amilanaoiscnhud.png"))); // NOI18N
         jLabel4.setText("jLabel4");
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/man.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/man.png"))); // NOI18N
         jLabel6.setText("jLabel6");
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/alpahbets.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/alpahbets.png"))); // NOI18N
         jLabel8.setText("jLabel8");
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/arangatan.jpg"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/arangatan_1.jpg"))); // NOI18N
         jLabel10.setText("jLabel10");
 
         jPanel3.setBackground(new java.awt.Color(153, 153, 153));
@@ -414,10 +414,10 @@ public class BookingReviewPage extends javax.swing.JFrame {
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(continuetopayment, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
                     .addComponent(back, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(9, Short.MAX_VALUE))
         );
 
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/artholodogy.jpg"))); // NOI18N
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/artholodogy.jpg"))); // NOI18N
         jLabel18.setText("jLabel18");
 
         jLabel19.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N

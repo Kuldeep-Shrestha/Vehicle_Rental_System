@@ -170,7 +170,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/view/987298397564.jpg"/>
+          <Image iconType="3" name="/image/987298397564_1.jpg"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel1"/>
       </Properties>
@@ -178,7 +178,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/view/milacnuivsd .png"/>
+          <Image iconType="3" name="/image/milacnuivsd .png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel3"/>
       </Properties>
@@ -186,7 +186,7 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/view/amilanaoiscnhud.png"/>
+          <Image iconType="3" name="/image/amilanaoiscnhud.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel4"/>
       </Properties>
@@ -194,7 +194,7 @@
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/view/man.png"/>
+          <Image iconType="3" name="/image/man.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel6"/>
       </Properties>
@@ -202,7 +202,7 @@
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/view/alpahbets.png"/>
+          <Image iconType="3" name="/image/alpahbets.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel8"/>
       </Properties>
@@ -210,7 +210,7 @@
     <Component class="javax.swing.JLabel" name="jLabel10">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/view/arangatan.jpg"/>
+          <Image iconType="3" name="/image/arangatan_1.jpg"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel10"/>
       </Properties>
@@ -297,7 +297,7 @@
                       <Component id="continuetopayment" pref="43" max="32767" attributes="0"/>
                       <Component id="back" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="17" max="32767" attributes="0"/>
+                  <EmptySpace pref="9" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -719,7 +719,7 @@
     <Component class="javax.swing.JLabel" name="jLabel18">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/view/artholodogy.jpg"/>
+          <Image iconType="3" name="/image/artholodogy.jpg"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel18"/>
       </Properties>
