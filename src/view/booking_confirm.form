@@ -841,7 +841,7 @@
         <Component class="javax.swing.JLabel" name="jLabel28">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/view/x5 r.jpg"/>
+              <Image iconType="3" name="/images/x5 r.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel28"/>
           </Properties>
@@ -967,7 +967,7 @@
         <Component class="javax.swing.JLabel" name="jLabel43">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/view/x5 r.jpg"/>
+              <Image iconType="3" name="/images/x5 r.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel28"/>
           </Properties>

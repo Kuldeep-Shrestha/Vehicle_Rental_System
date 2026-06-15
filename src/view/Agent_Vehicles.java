@@ -29,13 +29,8 @@ public class Agent_Vehicles extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -44,7 +39,6 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         jComboBox2 = new javax.swing.JComboBox<>();
         jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -102,7 +96,6 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jButton13 = new javax.swing.JButton();
         jLabel57 = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
-        jLabel59 = new javax.swing.JLabel();
         jLabel60 = new javax.swing.JLabel();
         jLabel61 = new javax.swing.JLabel();
         jLabel62 = new javax.swing.JLabel();
@@ -116,10 +109,6 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/Screenshot 2026-06-05 205800.png"))); // NOI18N
-        jPanel2.add(jLabel1);
-        jLabel1.setBounds(0, 0, 241, 120);
-
         jLabel2.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 51, 102));
         jLabel2.setText("My Vehicles");
@@ -131,45 +120,6 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jPanel2.add(jLabel3);
         jLabel3.setBounds(270, 70, 230, 29);
 
-        jButton1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/exit.png"))); // NOI18N
-        jButton1.setText("Log-Out");
-        jButton1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton1.setIconTextGap(20);
-        jButton1.addActionListener(this::jButton1ActionPerformed);
-        jPanel2.add(jButton1);
-        jButton1.setBounds(0, 890, 240, 60);
-
-        jButton2.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/home.png"))); // NOI18N
-        jButton2.setText("Dashboard");
-        jButton2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton2.setIconTextGap(20);
-        jPanel2.add(jButton2);
-        jButton2.setBounds(0, 140, 240, 60);
-
-        jButton3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/calendar.png"))); // NOI18N
-        jButton3.setText("Bookings");
-        jButton3.setActionCommand("Bookings");
-        jButton3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton3.setIconTextGap(20);
-        jButton3.addActionListener(this::jButton3ActionPerformed);
-        jPanel2.add(jButton3);
-        jButton3.setBounds(0, 200, 240, 60);
-
-        jButton4.setBackground(new java.awt.Color(238, 244, 250));
-        jButton4.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(13, 64, 140));
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/car.png"))); // NOI18N
-        jButton4.setText("Vehicles");
-        jButton4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton4.setIconTextGap(18);
-        jButton4.addActionListener(this::jButton4ActionPerformed);
-        jPanel2.add(jButton4);
-        jButton4.setBounds(0, 260, 240, 60);
-
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/letter-a.png"))); // NOI18N
         jLabel4.setText("Agent");
@@ -177,12 +127,12 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jPanel2.add(jLabel4);
         jLabel4.setBounds(1510, 20, 160, 40);
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/bell.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bell.png"))); // NOI18N
         jPanel2.add(jLabel5);
         jLabel5.setBounds(1440, 20, 30, 40);
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/Screenshot 2026-06-05 212442.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Screenshot 2026-06-05 212442.png"))); // NOI18N
         jPanel2.add(jLabel6);
         jLabel6.setBounds(1340, 96, 350, 830);
 
@@ -215,34 +165,25 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/menu-dots-vertical.png"))); // NOI18N
         jButton6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
         jPanel2.add(jButton6);
-        jButton6.setBounds(1230, 330, 37, 50);
+        jButton6.setBounds(1230, 330, 4, 50);
 
-        jButton7.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/user.png"))); // NOI18N
-        jButton7.setText("Profile");
-        jButton7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton7.setIconTextGap(20);
-        jButton7.addActionListener(this::jButton7ActionPerformed);
-        jPanel2.add(jButton7);
-        jButton7.setBounds(0, 320, 240, 60);
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/szki.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/szki.png"))); // NOI18N
         jPanel2.add(jLabel8);
         jLabel8.setBounds(280, 690, 200, 90);
 
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/nexon.png"))); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/nexon.png"))); // NOI18N
         jPanel2.add(jLabel9);
         jLabel9.setBounds(280, 820, 200, 90);
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/tyta can.png"))); // NOI18N
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/tyta can.png"))); // NOI18N
         jPanel2.add(jLabel10);
         jLabel10.setBounds(280, 430, 200, 90);
 
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/tata.png"))); // NOI18N
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/tata.png"))); // NOI18N
         jPanel2.add(jLabel11);
         jLabel11.setBounds(280, 560, 200, 90);
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/bmw x5.png"))); // NOI18N
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bmw x5.png"))); // NOI18N
         jPanel2.add(jLabel12);
         jLabel12.setBounds(280, 310, 200, 90);
 
@@ -262,7 +203,7 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jLabel16.setForeground(new java.awt.Color(39, 75, 146));
         jLabel16.setText("SUV");
         jPanel2.add(jLabel16);
-        jLabel16.setBounds(590, 310, 25, 16);
+        jLabel16.setBounds(590, 310, 40, 16);
 
         jLabel17.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(153, 153, 153));
@@ -298,12 +239,12 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/filter.png"))); // NOI18N
         jButton8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
         jPanel2.add(jButton8);
-        jButton8.setBounds(1230, 220, 44, 50);
+        jButton8.setBounds(1230, 220, 4, 50);
 
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/menu-dots-vertical.png"))); // NOI18N
         jButton9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
         jPanel2.add(jButton9);
-        jButton9.setBounds(1230, 460, 37, 50);
+        jButton9.setBounds(1230, 460, 4, 50);
 
         jLabel22.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(153, 153, 153));
@@ -352,7 +293,7 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jLabel28.setForeground(new java.awt.Color(39, 75, 146));
         jLabel28.setText("SUV");
         jPanel2.add(jLabel28);
-        jLabel28.setBounds(590, 440, 25, 16);
+        jLabel28.setBounds(590, 440, 40, 16);
 
         jLabel29.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(153, 153, 153));
@@ -392,7 +333,7 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/menu-dots-vertical.png"))); // NOI18N
         jButton10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
         jPanel2.add(jButton10);
-        jButton10.setBounds(1230, 460, 37, 50);
+        jButton10.setBounds(1230, 460, 4, 50);
 
         jLabel35.setBackground(new java.awt.Color(153, 204, 0));
         jLabel35.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
@@ -406,7 +347,7 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jLabel36.setForeground(new java.awt.Color(39, 75, 146));
         jLabel36.setText("SUV");
         jPanel2.add(jLabel36);
-        jLabel36.setBounds(590, 440, 25, 16);
+        jLabel36.setBounds(590, 440, 26, 16);
 
         jLabel37.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         jLabel37.setForeground(new java.awt.Color(153, 153, 153));
@@ -429,7 +370,7 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/menu-dots-vertical.png"))); // NOI18N
         jButton11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
         jPanel2.add(jButton11);
-        jButton11.setBounds(1230, 590, 37, 50);
+        jButton11.setBounds(1230, 590, 4, 50);
 
         jLabel40.setBackground(new java.awt.Color(153, 204, 0));
         jLabel40.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
@@ -448,7 +389,7 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jLabel42.setForeground(new java.awt.Color(39, 75, 146));
         jLabel42.setText("SUV");
         jPanel2.add(jLabel42);
-        jLabel42.setBounds(590, 570, 25, 16);
+        jLabel42.setBounds(590, 570, 40, 16);
 
         jLabel43.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(153, 153, 153));
@@ -467,7 +408,7 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jLabel45.setForeground(new java.awt.Color(39, 75, 146));
         jLabel45.setText("SUV");
         jPanel2.add(jLabel45);
-        jLabel45.setBounds(590, 570, 25, 16);
+        jLabel45.setBounds(590, 570, 26, 16);
 
         jLabel46.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jLabel46.setForeground(new java.awt.Color(153, 153, 153));
@@ -480,19 +421,19 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jLabel47.setForeground(new java.awt.Color(39, 75, 146));
         jLabel47.setText("SUV");
         jPanel2.add(jLabel47);
-        jLabel47.setBounds(590, 700, 25, 16);
+        jLabel47.setBounds(590, 700, 40, 16);
 
         jLabel48.setBackground(new java.awt.Color(153, 204, 255));
         jLabel48.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         jLabel48.setForeground(new java.awt.Color(39, 75, 146));
         jLabel48.setText("SUV");
         jPanel2.add(jLabel48);
-        jLabel48.setBounds(590, 700, 25, 16);
+        jLabel48.setBounds(590, 700, 26, 16);
 
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/menu-dots-vertical.png"))); // NOI18N
         jButton12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
         jPanel2.add(jButton12);
-        jButton12.setBounds(1230, 720, 37, 50);
+        jButton12.setBounds(1230, 720, 4, 50);
 
         jLabel49.setBackground(new java.awt.Color(153, 204, 0));
         jLabel49.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
@@ -546,7 +487,7 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/menu-dots-vertical.png"))); // NOI18N
         jButton13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
         jPanel2.add(jButton13);
-        jButton13.setBounds(1230, 850, 37, 50);
+        jButton13.setBounds(1230, 850, 4, 50);
 
         jLabel57.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel57.setText("BMW  X5");
@@ -558,13 +499,6 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jLabel58.setText("Daily Rate");
         jPanel2.add(jLabel58);
         jLabel58.setBounds(920, 860, 70, 16);
-
-        jLabel59.setBackground(new java.awt.Color(153, 204, 255));
-        jLabel59.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel59.setForeground(new java.awt.Color(39, 75, 146));
-        jLabel59.setText("SUV");
-        jPanel2.add(jLabel59);
-        jLabel59.setBounds(590, 830, 25, 16);
 
         jLabel60.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         jLabel60.setForeground(new java.awt.Color(153, 153, 153));
@@ -589,7 +523,7 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jLabel63.setForeground(new java.awt.Color(39, 75, 146));
         jLabel63.setText("SUV");
         jPanel2.add(jLabel63);
-        jLabel63.setBounds(600, 830, 25, 16);
+        jLabel63.setBounds(600, 830, 30, 16);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(0, 0, 1710, 1010);
@@ -597,25 +531,9 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -643,22 +561,16 @@ public class Agent_Vehicles extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -712,7 +624,6 @@ public class Agent_Vehicles extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;

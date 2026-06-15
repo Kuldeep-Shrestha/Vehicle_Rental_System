@@ -299,7 +299,7 @@ public class booking_confirm extends javax.swing.JFrame {
         jLabel27.setText("4 Days");
         jLabel27.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
 
-        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/x5 r.jpg"))); // NOI18N
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/x5 r.jpg"))); // NOI18N
         jLabel28.setText("jLabel28");
 
         jLabel29.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
@@ -348,7 +348,7 @@ public class booking_confirm extends javax.swing.JFrame {
         jLabel42.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel42.setText("Booking Summary");
 
-        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/x5 r.jpg"))); // NOI18N
+        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/x5 r.jpg"))); // NOI18N
         jLabel43.setText("jLabel28");
 
         jLabel44.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
