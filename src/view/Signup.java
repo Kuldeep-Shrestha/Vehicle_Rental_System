@@ -9,12 +9,12 @@ package view;
  *
  * @author LENOVO
  */
-public class View extends javax.swing.JPanel {
+public class Signup extends javax.swing.JPanel {
 
     /**
      * Creates new form View
      */
-    public View() {
+    public Signup() {
         initComponents();
     }
 
