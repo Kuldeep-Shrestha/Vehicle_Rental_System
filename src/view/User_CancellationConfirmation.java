@@ -29,12 +29,12 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
     private void initComponents() {
 
         Body = new javax.swing.JPanel();
-        PaymentBody = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        MessagePanel = new javax.swing.JPanel();
+        sucessfull_img = new javax.swing.JLabel();
+        txt1 = new javax.swing.JLabel();
+        txt2 = new javax.swing.JLabel();
+        Cancellation_ID = new javax.swing.JLabel();
+        CID_txt = new javax.swing.JLabel();
         BookingPanel = new javax.swing.JPanel();
         BS_txt = new javax.swing.JLabel();
         BCar_Img = new javax.swing.JLabel();
@@ -62,32 +62,32 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
         Cancellationicon = new javax.swing.JLabel();
         CancellationN2_txt1 = new javax.swing.JLabel();
         Duration = new javax.swing.JLabel();
-        ReasonPanel = new javax.swing.JPanel();
+        RefundProcess_panel = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
+        RM_img = new javax.swing.JLabel();
+        est_img = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        RefundingProcess = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
+        RA_img = new javax.swing.JLabel();
+        Info_panel = new javax.swing.JPanel();
+        Info_text1 = new javax.swing.JLabel();
+        Info_txt2 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         BackButton = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
+        Cancellation_ConfirmationPanel = new javax.swing.JPanel();
+        Cancellation_Confirmedtxt = new javax.swing.JLabel();
+        Refund_Initiatedtxt = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
+        cacellation_Confirmation = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         DashBoard = new javax.swing.JPanel();
         DB = new javax.swing.JButton();
@@ -109,62 +109,62 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
         Body.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
         Body.setForeground(new java.awt.Color(153, 0, 0));
 
-        PaymentBody.setBackground(new java.awt.Color(242, 249, 245));
-        PaymentBody.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        MessagePanel.setBackground(new java.awt.Color(242, 249, 245));
+        MessagePanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-14 182343 (1).png")); // NOI18N
-        jLabel1.setText("jLabel1");
+        sucessfull_img.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-14 182343 (1).png")); // NOI18N
+        sucessfull_img.setText("jLabel1");
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel2.setText("Your Booking Has Been Cancelled Sucessfully!");
+        txt1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        txt1.setText("Your Booking Has Been Cancelled Sucessfully!");
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel3.setText("We're Sorry to see you go. Refund as been initiated as per our cancellation policy.");
+        txt2.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        txt2.setForeground(new java.awt.Color(102, 102, 102));
+        txt2.setText("We're Sorry to see you go. Refund as been initiated as per our cancellation policy.");
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(102, 221, 91));
-        jLabel4.setText("#CNCL######");
+        Cancellation_ID.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        Cancellation_ID.setForeground(new java.awt.Color(102, 221, 91));
+        Cancellation_ID.setText("#CNCL######");
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel5.setText("Cancellation ID :");
+        CID_txt.setFont(new java.awt.Font("Segoe UI", 0, 13)); // NOI18N
+        CID_txt.setForeground(new java.awt.Color(102, 102, 102));
+        CID_txt.setText("Cancellation ID :");
 
-        javax.swing.GroupLayout PaymentBodyLayout = new javax.swing.GroupLayout(PaymentBody);
-        PaymentBody.setLayout(PaymentBodyLayout);
-        PaymentBodyLayout.setHorizontalGroup(
-            PaymentBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PaymentBodyLayout.createSequentialGroup()
+        javax.swing.GroupLayout MessagePanelLayout = new javax.swing.GroupLayout(MessagePanel);
+        MessagePanel.setLayout(MessagePanelLayout);
+        MessagePanelLayout.setHorizontalGroup(
+            MessagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MessagePanelLayout.createSequentialGroup()
                 .addContainerGap(232, Short.MAX_VALUE)
-                .addGroup(PaymentBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PaymentBodyLayout.createSequentialGroup()
-                        .addComponent(jLabel5)
+                .addGroup(MessagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MessagePanelLayout.createSequentialGroup()
+                        .addComponent(CID_txt)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Cancellation_ID, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(314, 314, 314))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PaymentBodyLayout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MessagePanelLayout.createSequentialGroup()
+                        .addComponent(sucessfull_img, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(372, 372, 372))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PaymentBodyLayout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MessagePanelLayout.createSequentialGroup()
+                        .addComponent(txt1, javax.swing.GroupLayout.PREFERRED_SIZE, 314, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(262, 262, 262))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PaymentBodyLayout.createSequentialGroup()
-                        .addComponent(jLabel3)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MessagePanelLayout.createSequentialGroup()
+                        .addComponent(txt2)
                         .addGap(192, 192, 192))))
         );
-        PaymentBodyLayout.setVerticalGroup(
-            PaymentBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PaymentBodyLayout.createSequentialGroup()
+        MessagePanelLayout.setVerticalGroup(
+            MessagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MessagePanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(sucessfull_img, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txt1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txt2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(PaymentBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(MessagePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Cancellation_ID, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CID_txt, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
@@ -244,7 +244,7 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
                         .addComponent(Cancellationicon)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Cancellation_TXT, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(86, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(CancellationN_txt, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(Cancellation_NoteLayout.createSequentialGroup()
                         .addComponent(CancellationN2_txt, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -289,7 +289,7 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
                             .addComponent(Subtotal_txt)
                             .addComponent(TaxandFees_txt)
                             .addComponent(Total_txt, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                         .addGroup(BookingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(Drop_offLocation, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
                             .addComponent(Pickup_Location, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -308,8 +308,7 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
                             .addComponent(Car_Name)
                             .addComponent(VehicleType, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(Cancellation_Note, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                    .addComponent(Cancellation_Note, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         BookingPanelLayout.setVerticalGroup(
             BookingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -360,9 +359,9 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        ReasonPanel.setBackground(new java.awt.Color(255, 255, 255));
-        ReasonPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        ReasonPanel.setForeground(new java.awt.Color(102, 102, 102));
+        RefundProcess_panel.setBackground(new java.awt.Color(255, 255, 255));
+        RefundProcess_panel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        RefundProcess_panel.setForeground(new java.awt.Color(102, 102, 102));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel6.setText("Refunding Process");
@@ -373,11 +372,11 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
         jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-15 184322 (2).png")); // NOI18N
         jLabel8.setText("jLabel8");
 
-        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-15 184204 (2).png")); // NOI18N
-        jLabel10.setText("jLabel8");
+        RM_img.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-15 184204 (2).png")); // NOI18N
+        RM_img.setText("jLabel8");
 
-        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-15 184258 (2).png")); // NOI18N
-        jLabel11.setText("jLabel8");
+        est_img.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-15 184258 (2).png")); // NOI18N
+        est_img.setText("jLabel8");
 
         jLabel12.setForeground(new java.awt.Color(102, 102, 102));
         jLabel12.setText("Refund Amount");
@@ -391,58 +390,58 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
         jLabel15.setForeground(new java.awt.Color(102, 102, 102));
         jLabel15.setText("Refund Status");
 
-        jLabel19.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-15 183949 (2).png")); // NOI18N
-        jLabel19.setText("jLabel8");
+        RA_img.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-15 183949 (2).png")); // NOI18N
+        RA_img.setText("jLabel8");
 
-        javax.swing.GroupLayout ReasonPanelLayout = new javax.swing.GroupLayout(ReasonPanel);
-        ReasonPanel.setLayout(ReasonPanelLayout);
-        ReasonPanelLayout.setHorizontalGroup(
-            ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ReasonPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout RefundProcess_panelLayout = new javax.swing.GroupLayout(RefundProcess_panel);
+        RefundProcess_panel.setLayout(RefundProcess_panelLayout);
+        RefundProcess_panelLayout.setHorizontalGroup(
+            RefundProcess_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RefundProcess_panelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RefundProcess_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel13)
-                    .addGroup(ReasonPanelLayout.createSequentialGroup()
+                    .addGroup(RefundProcess_panelLayout.createSequentialGroup()
                         .addGap(25, 25, 25)
-                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(est_img, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(95, 95, 95)
-                .addGroup(ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(RefundProcess_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel15)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(122, 122, 122))
-            .addGroup(ReasonPanelLayout.createSequentialGroup()
-                .addGroup(ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(ReasonPanelLayout.createSequentialGroup()
+            .addGroup(RefundProcess_panelLayout.createSequentialGroup()
+                .addGroup(RefundProcess_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(RefundProcess_panelLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(RefundProcess_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(ReasonPanelLayout.createSequentialGroup()
+                    .addGroup(RefundProcess_panelLayout.createSequentialGroup()
                         .addGap(91, 91, 91)
-                        .addGroup(ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(RefundProcess_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(RA_img, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel12))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(RefundProcess_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(RM_img, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        ReasonPanelLayout.setVerticalGroup(
-            ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(ReasonPanelLayout.createSequentialGroup()
+        RefundProcess_panelLayout.setVerticalGroup(
+            RefundProcess_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RefundProcess_panelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel7)
                 .addGap(18, 18, 18)
-                .addGroup(ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(RefundProcess_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RM_img, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(est_img, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(RA_img, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(RefundProcess_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
                     .addComponent(jLabel13)
                     .addComponent(jLabel14)
@@ -450,40 +449,40 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        RefundingProcess.setBackground(new java.awt.Color(211, 225, 255));
-        RefundingProcess.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        Info_panel.setBackground(new java.awt.Color(211, 225, 255));
+        Info_panel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
-        jLabel16.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel16.setText("You will recieve an email confirmation with the refund details shortly");
+        Info_text1.setForeground(new java.awt.Color(102, 102, 102));
+        Info_text1.setText("You will recieve an email confirmation with the refund details shortly");
 
-        jLabel17.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel17.setText("if you have any question contact the support team");
+        Info_txt2.setForeground(new java.awt.Color(102, 102, 102));
+        Info_txt2.setText("if you have any question contact the support team");
 
         jLabel18.setForeground(new java.awt.Color(102, 102, 102));
         jLabel18.setText("ⓘ");
 
-        javax.swing.GroupLayout RefundingProcessLayout = new javax.swing.GroupLayout(RefundingProcess);
-        RefundingProcess.setLayout(RefundingProcessLayout);
-        RefundingProcessLayout.setHorizontalGroup(
-            RefundingProcessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RefundingProcessLayout.createSequentialGroup()
+        javax.swing.GroupLayout Info_panelLayout = new javax.swing.GroupLayout(Info_panel);
+        Info_panel.setLayout(Info_panelLayout);
+        Info_panelLayout.setHorizontalGroup(
+            Info_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Info_panelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(RefundingProcessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(Info_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Info_text1, javax.swing.GroupLayout.PREFERRED_SIZE, 440, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Info_txt2, javax.swing.GroupLayout.PREFERRED_SIZE, 365, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        RefundingProcessLayout.setVerticalGroup(
-            RefundingProcessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RefundingProcessLayout.createSequentialGroup()
+        Info_panelLayout.setVerticalGroup(
+            Info_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Info_panelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(RefundingProcessLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(RefundingProcessLayout.createSequentialGroup()
-                        .addComponent(jLabel16)
+                .addGroup(Info_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Info_panelLayout.createSequentialGroup()
+                        .addComponent(Info_text1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel17))
+                        .addComponent(Info_txt2))
                     .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -493,15 +492,15 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
         BackButton.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
         BackButton.addActionListener(this::BackButtonActionPerformed);
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        jPanel1.setForeground(new java.awt.Color(204, 204, 204));
+        Cancellation_ConfirmationPanel.setBackground(new java.awt.Color(255, 255, 255));
+        Cancellation_ConfirmationPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
+        Cancellation_ConfirmationPanel.setForeground(new java.awt.Color(204, 204, 204));
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel9.setText("Cancellation Confirmed");
+        Cancellation_Confirmedtxt.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Cancellation_Confirmedtxt.setText("Cancellation Confirmed");
 
-        jLabel20.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel20.setText("Refund Initiated");
+        Refund_Initiatedtxt.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Refund_Initiatedtxt.setText("Refund Initiated");
 
         jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel21.setText("Refund Processing");
@@ -521,65 +520,65 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
         jLabel26.setForeground(new java.awt.Color(51, 51, 51));
         jLabel26.setText("jLabel26");
 
-        jLabel27.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\stretched-1781604889921.png")); // NOI18N
-        jLabel27.setText("jLabel27");
+        cacellation_Confirmation.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\stretched-1781604889921.png")); // NOI18N
+        cacellation_Confirmation.setText("jLabel27");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout Cancellation_ConfirmationPanelLayout = new javax.swing.GroupLayout(Cancellation_ConfirmationPanel);
+        Cancellation_ConfirmationPanel.setLayout(Cancellation_ConfirmationPanelLayout);
+        Cancellation_ConfirmationPanelLayout.setHorizontalGroup(
+            Cancellation_ConfirmationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Cancellation_ConfirmationPanelLayout.createSequentialGroup()
+                .addGroup(Cancellation_ConfirmationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Cancellation_ConfirmationPanelLayout.createSequentialGroup()
                         .addGap(24, 24, 24)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(Cancellation_ConfirmationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(Cancellation_ConfirmationPanelLayout.createSequentialGroup()
                                 .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(Cancellation_ConfirmationPanelLayout.createSequentialGroup()
+                                .addComponent(Cancellation_Confirmedtxt, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(129, 129, 129)
-                                .addComponent(jLabel20)
+                                .addComponent(Refund_Initiatedtxt)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(137, 137, 137)
                                 .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(13, 13, 13))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGroup(Cancellation_ConfirmationPanelLayout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 903, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                        .addGroup(Cancellation_ConfirmationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(cacellation_Confirmation, javax.swing.GroupLayout.PREFERRED_SIZE, 903, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Cancellation_ConfirmationPanelLayout.createSequentialGroup()
                                 .addGap(288, 288, 288)
                                 .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(93, 93, 93)
                                 .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addGap(38, 38, 38))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        Cancellation_ConfirmationPanelLayout.setVerticalGroup(
+            Cancellation_ConfirmationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Cancellation_ConfirmationPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cacellation_Confirmation, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel20)
+                .addGroup(Cancellation_ConfirmationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Cancellation_Confirmedtxt)
+                    .addComponent(Refund_Initiatedtxt)
                     .addComponent(jLabel21)
                     .addComponent(jLabel22))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(Cancellation_ConfirmationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Cancellation_ConfirmationPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel23)
                         .addComponent(jLabel24)
                         .addComponent(jLabel25))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Cancellation_ConfirmationPanelLayout.createSequentialGroup()
                         .addComponent(jLabel26)
                         .addContainerGap())))
         );
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Go back");
 
         javax.swing.GroupLayout BodyLayout = new javax.swing.GroupLayout(Body);
         Body.setLayout(BodyLayout);
@@ -588,15 +587,15 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BodyLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(RefundingProcess, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(ReasonPanel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Info_panel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(RefundProcess_panel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(BodyLayout.createSequentialGroup()
-                        .addComponent(PaymentBody, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(MessagePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Cancellation_ConfirmationPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(BookingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(105, 105, 105))
+                .addGap(93, 93, 93))
             .addGroup(BodyLayout.createSequentialGroup()
                 .addGroup(BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(BodyLayout.createSequentialGroup()
@@ -613,13 +612,13 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
                 .addGroup(BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(BodyLayout.createSequentialGroup()
                         .addGap(14, 14, 14)
-                        .addComponent(PaymentBody, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(MessagePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(ReasonPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(RefundProcess_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Cancellation_ConfirmationPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(RefundingProcess, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Info_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(3, 3, 3)
                         .addComponent(jButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
@@ -705,7 +704,7 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
                 .addGroup(TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(TopPartLayout.createSequentialGroup()
                         .addComponent(DashboardNavi, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 632, Short.MAX_VALUE))
+                        .addGap(0, 709, Short.MAX_VALUE))
                     .addGroup(TopPartLayout.createSequentialGroup()
                         .addComponent(BAV, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -740,8 +739,9 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
         LogoLayout.setHorizontalGroup(
             LogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(LogoLayout.createSequentialGroup()
-                .addComponent(DVRlogo, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(32, 32, 32)
+                .addComponent(DVRlogo, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(39, Short.MAX_VALUE))
         );
         LogoLayout.setVerticalGroup(
             LogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -753,19 +753,17 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(184, Short.MAX_VALUE)
-                .addComponent(Body, javax.swing.GroupLayout.PREFERRED_SIZE, 1150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(15, 15, 15))
+                .addContainerGap(246, Short.MAX_VALUE)
+                .addComponent(Body, javax.swing.GroupLayout.PREFERRED_SIZE, 1214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 9, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(TopPart, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(DashBoard, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(0, 23, Short.MAX_VALUE)))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(DashBoard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Logo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(TopPart, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -835,9 +833,13 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
     private javax.swing.JButton BackButton;
     private javax.swing.JPanel Body;
     private javax.swing.JPanel BookingPanel;
+    private javax.swing.JLabel CID_txt;
     private javax.swing.JLabel CancellationN2_txt;
     private javax.swing.JLabel CancellationN2_txt1;
     private javax.swing.JLabel CancellationN_txt;
+    private javax.swing.JPanel Cancellation_ConfirmationPanel;
+    private javax.swing.JLabel Cancellation_Confirmedtxt;
+    private javax.swing.JLabel Cancellation_ID;
     private javax.swing.JPanel Cancellation_Note;
     private javax.swing.JLabel Cancellation_TXT;
     private javax.swing.JLabel Cancellationicon;
@@ -850,18 +852,23 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
     private javax.swing.JLabel Drop_offLocation;
     private javax.swing.JLabel Duration;
     private javax.swing.JLabel Duration_txt;
+    private javax.swing.JPanel Info_panel;
+    private javax.swing.JLabel Info_text1;
+    private javax.swing.JLabel Info_txt2;
     private javax.swing.JPanel Logo;
     private javax.swing.JButton Logoutbutton;
+    private javax.swing.JPanel MessagePanel;
     private javax.swing.JButton MyBookingButton;
-    private javax.swing.JPanel PaymentBody;
     private javax.swing.JLabel Pfp;
     private javax.swing.JLabel Pick_up;
     private javax.swing.JLabel Pickup_Location;
     private javax.swing.JButton Profilebutton;
+    private javax.swing.JLabel RA_img;
+    private javax.swing.JLabel RM_img;
     private javax.swing.JLabel RatePerDay;
     private javax.swing.JLabel RatePerDaytxt;
-    private javax.swing.JPanel ReasonPanel;
-    private javax.swing.JPanel RefundingProcess;
+    private javax.swing.JPanel RefundProcess_panel;
+    private javax.swing.JLabel Refund_Initiatedtxt;
     private javax.swing.JLabel SubTotal;
     private javax.swing.JLabel Subtotal_txt;
     private javax.swing.JLabel TaxAndFees;
@@ -872,36 +879,27 @@ public class User_CancellationConfirmation extends javax.swing.JFrame {
     private javax.swing.JLabel UserName;
     private javax.swing.JLabel VehicleType;
     private javax.swing.JButton Vehicles;
+    private javax.swing.JLabel cacellation_Confirmation;
+    private javax.swing.JLabel est_img;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JLabel sucessfull_img;
+    private javax.swing.JLabel txt1;
+    private javax.swing.JLabel txt2;
     // End of variables declaration//GEN-END:variables
 }
