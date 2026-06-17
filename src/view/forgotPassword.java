@@ -43,10 +43,10 @@ public class forgotPassword extends javax.swing.JFrame {
         WhyYouForget = new javax.swing.JLabel();
         OtpButton = new javax.swing.JButton();
         ChangePassword = new javax.swing.JButton();
-        TermsCheckBox = new javax.swing.JCheckBox();
         DOKO = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().setLayout(null);
 
         jPanel1.setBackground(new java.awt.Color(236, 236, 236));
@@ -127,14 +127,10 @@ public class forgotPassword extends javax.swing.JFrame {
         ChangePassword.setText("Change Password");
         ChangePassword.addActionListener(this::ChangePasswordActionPerformed);
         jPanel1.add(ChangePassword);
-        ChangePassword.setBounds(170, 420, 165, 32);
-
-        TermsCheckBox.setText("Terms & Condition");
-        jPanel1.add(TermsCheckBox);
-        TermsCheckBox.setBounds(170, 390, 125, 20);
+        ChangePassword.setBounds(180, 460, 165, 32);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(290, 80, 520, 470);
+        jPanel1.setBounds(550, 80, 520, 560);
 
         DOKO.setBackground(new java.awt.Color(41, 51, 123));
         DOKO.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
@@ -214,7 +210,6 @@ public class forgotPassword extends javax.swing.JFrame {
     private javax.swing.JPasswordField NewPasswordField;
     private javax.swing.JButton OtpButton;
     private javax.swing.JTextField OtpTextField;
-    private javax.swing.JCheckBox TermsCheckBox;
     private javax.swing.JLabel WhyYouForget;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel otp;

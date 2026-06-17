@@ -29,10 +29,8 @@ public class Payment extends javax.swing.JFrame {
     private void initComponents() {
 
         Logo = new javax.swing.JPanel();
-        DVRlogo = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
         TopPart = new javax.swing.JPanel();
-        UserName = new javax.swing.JLabel();
-        Pfp = new javax.swing.JLabel();
         BAV = new javax.swing.JLabel();
         DashboardNavi = new javax.swing.JLabel();
         DashBoard = new javax.swing.JPanel();
@@ -87,33 +85,34 @@ public class Payment extends javax.swing.JFrame {
 
         Logo.setBackground(new java.awt.Color(255, 255, 255));
 
-        DVRlogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/LOGO .jpg"))); // NOI18N
-        DVRlogo.setText("jLabel1");
+        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo.png"))); // NOI18N
+        jLabel63.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         javax.swing.GroupLayout LogoLayout = new javax.swing.GroupLayout(Logo);
         Logo.setLayout(LogoLayout);
         LogoLayout.setHorizontalGroup(
             LogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(LogoLayout.createSequentialGroup()
-                .addComponent(DVRlogo, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGap(0, 220, Short.MAX_VALUE)
+            .addGroup(LogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(LogoLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(10, Short.MAX_VALUE)))
         );
         LogoLayout.setVerticalGroup(
             LogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(DVRlogo, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
+            .addGap(0, 138, Short.MAX_VALUE)
+            .addGroup(LogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(LogoLayout.createSequentialGroup()
+                    .addGap(8, 8, 8)
+                    .addComponent(jLabel63)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
         getContentPane().add(Logo);
-        Logo.setBounds(0, 0, 172, 85);
+        Logo.setBounds(0, 0, 220, 138);
 
         TopPart.setBackground(new java.awt.Color(255, 255, 255));
-
-        UserName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        UserName.setText("User");
-        UserName.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-
-        Pfp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User.jpg"))); // NOI18N
-        Pfp.setText("jLabel4");
 
         BAV.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         BAV.setText("Book a Vehicle");
@@ -125,60 +124,49 @@ public class Payment extends javax.swing.JFrame {
         TopPartLayout.setHorizontalGroup(
             TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TopPartLayout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addContainerGap()
                 .addGroup(TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(TopPartLayout.createSequentialGroup()
-                        .addComponent(DashboardNavi, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 593, Short.MAX_VALUE))
-                    .addGroup(TopPartLayout.createSequentialGroup()
-                        .addComponent(BAV, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(DashboardNavi, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAV, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(794, Short.MAX_VALUE))
         );
         TopPartLayout.setVerticalGroup(
             TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TopPartLayout.createSequentialGroup()
-                .addGap(4, 4, 4)
-                .addGroup(TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TopPartLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(BAV, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(30, 30, 30)
+                .addComponent(BAV)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addComponent(DashboardNavi)
-                .addGap(12, 12, 12))
+                .addGap(33, 33, 33))
         );
 
         getContentPane().add(TopPart);
-        TopPart.setBounds(178, 0, 1100, 85);
+        TopPart.setBounds(228, 0, 1280, 140);
 
         DashBoard.setBackground(new java.awt.Color(255, 255, 255));
 
-        DB.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
+        DB.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
         DB.setText("🏠 DashBoard  ");
         DB.setBorderPainted(false);
         DB.addActionListener(this::DBActionPerformed);
 
-        MyBookingButton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
+        MyBookingButton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
         MyBookingButton.setText("🗓️ My Bookings");
         MyBookingButton.setBorderPainted(false);
         MyBookingButton.addActionListener(this::MyBookingButtonActionPerformed);
 
-        Vehicles.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
+        Vehicles.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
         Vehicles.setText("🚗 Vehicles      ");
         Vehicles.setBorderPainted(false);
+        Vehicles.addActionListener(this::VehiclesActionPerformed);
 
-        Profilebutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
+        Profilebutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        Profilebutton.setForeground(new java.awt.Color(51, 102, 255));
         Profilebutton.setText("👤 Profile        ");
         Profilebutton.setBorderPainted(false);
         Profilebutton.addActionListener(this::ProfilebuttonActionPerformed);
 
-        Logoutbutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
+        Logoutbutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
         Logoutbutton.setText("←] Logout     ");
         Logoutbutton.setBorderPainted(false);
 
@@ -186,30 +174,41 @@ public class Payment extends javax.swing.JFrame {
         DashBoard.setLayout(DashBoardLayout);
         DashBoardLayout.setHorizontalGroup(
             DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(DB, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(MyBookingButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Vehicles, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Profilebutton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Logoutbutton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(DashBoardLayout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(DashBoardLayout.createSequentialGroup()
+                            .addGap(6, 6, 6)
+                            .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(Vehicles)
+                                .addComponent(Profilebutton)))
+                        .addGroup(DashBoardLayout.createSequentialGroup()
+                            .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(MyBookingButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(DB, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(34, 34, 34)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DashBoardLayout.createSequentialGroup()
+                        .addComponent(Logoutbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37))))
         );
         DashBoardLayout.setVerticalGroup(
             DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DashBoardLayout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DashBoardLayout.createSequentialGroup()
                 .addComponent(DB, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(MyBookingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(12, 12, 12)
                 .addComponent(Vehicles, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Profilebutton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 333, Short.MAX_VALUE)
-                .addComponent(Logoutbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 346, Short.MAX_VALUE)
+                .addComponent(Logoutbutton)
+                .addGap(56, 56, 56))
         );
 
         getContentPane().add(DashBoard);
-        DashBoard.setBounds(0, 91, 170, 560);
+        DashBoard.setBounds(0, 150, 220, 630);
 
         Body.setBackground(new java.awt.Color(255, 255, 255));
         Body.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
@@ -231,7 +230,6 @@ public class Payment extends javax.swing.JFrame {
 
         ChooseeSewa.setText("jRadioButton1");
 
-        eSewaImg.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\esewa (1).png")); // NOI18N
         eSewaImg.setText("jLabel4");
 
         jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -268,7 +266,6 @@ public class Payment extends javax.swing.JFrame {
 
         ChooseKhalti.setText("jRadioButton1");
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\khalti (2).jpg")); // NOI18N
         jLabel6.setText("jLabel4");
 
         jLabel24.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -305,7 +302,6 @@ public class Payment extends javax.swing.JFrame {
 
         ChooseIps.setText("jRadioButton1");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\paysafely (1).png")); // NOI18N
         jLabel4.setText("jLabel4");
 
         jLabel25.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -534,7 +530,7 @@ public class Payment extends javax.swing.JFrame {
         BodyLayout.setHorizontalGroup(
             BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BodyLayout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(PaymentBody, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addComponent(BookingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -550,14 +546,18 @@ public class Payment extends javax.swing.JFrame {
                     .addGroup(BodyLayout.createSequentialGroup()
                         .addGap(32, 32, 32)
                         .addComponent(BookingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(131, Short.MAX_VALUE))
+                .addContainerGap(201, Short.MAX_VALUE))
         );
 
         getContentPane().add(Body);
-        Body.setBounds(180, 90, 1150, 560);
+        Body.setBounds(230, 150, 1280, 630);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void DBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DBActionPerformed
         // TODO add your handling code here:
@@ -567,13 +567,13 @@ public class Payment extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_MyBookingButtonActionPerformed
 
+    private void VehiclesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VehiclesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VehiclesActionPerformed
+
     private void ProfilebuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilebuttonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ProfilebuttonActionPerformed
-
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -609,7 +609,6 @@ public class Payment extends javax.swing.JFrame {
     private javax.swing.JRadioButton ChooseKhalti;
     private javax.swing.JRadioButton ChooseeSewa;
     private javax.swing.JButton DB;
-    private javax.swing.JLabel DVRlogo;
     private javax.swing.JPanel DashBoard;
     private javax.swing.JLabel DashboardNavi;
     private javax.swing.JPanel IpsPanel;
@@ -620,10 +619,8 @@ public class Payment extends javax.swing.JFrame {
     private javax.swing.JButton PayButton;
     private javax.swing.JPanel PaymentBody;
     private javax.swing.JLabel PaymentText;
-    private javax.swing.JLabel Pfp;
     private javax.swing.JButton Profilebutton;
     private javax.swing.JPanel TopPart;
-    private javax.swing.JLabel UserName;
     private javax.swing.JButton Vehicles;
     private javax.swing.JLabel eSewaImg;
     private javax.swing.JPanel eSewaPanel;
@@ -648,6 +645,7 @@ public class Payment extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

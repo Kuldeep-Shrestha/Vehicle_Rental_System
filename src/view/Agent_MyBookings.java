@@ -8,14 +8,14 @@ package view;
  *
  * @author Apekshya
  */
-public class NewJFrame extends javax.swing.JFrame {
+public class Agent_MyBookings extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(NewJFrame.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Agent_MyBookings.class.getName());
 
     /**
      * Creates new form NewJFrame
      */
-    public NewJFrame() {
+    public Agent_MyBookings() {
         initComponents();
     }
 
@@ -28,13 +28,7 @@ public class NewJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        DVRlogo = new javax.swing.JLabel();
         DashBoard = new javax.swing.JPanel();
-        DB = new javax.swing.JButton();
-        MyBookingButton = new javax.swing.JButton();
-        Vehicles = new javax.swing.JButton();
-        Profilebutton = new javax.swing.JButton();
-        Logoutbutton = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         MyBookingsTxt = new javax.swing.JLabel();
@@ -95,76 +89,28 @@ public class NewJFrame extends javax.swing.JFrame {
         Cancel_Booking = new javax.swing.JButton();
         Agent_Pfp = new javax.swing.JLabel();
         Agent_Name = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        DVRlogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/LOGO .jpg"))); // NOI18N
-        DVRlogo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
-        DVRlogo.setPreferredSize(new java.awt.Dimension(200, 90));
 
         DashBoard.setBackground(new java.awt.Color(255, 255, 255));
         DashBoard.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
         DashBoard.setForeground(new java.awt.Color(221, 221, 221));
 
-        DB.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
-        DB.setText("🏠 DashBoard  ");
-        DB.setBorderPainted(false);
-        DB.addActionListener(this::DBActionPerformed);
-
-        MyBookingButton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
-        MyBookingButton.setText("🗓️ My Bookings");
-        MyBookingButton.setBorderPainted(false);
-        MyBookingButton.addActionListener(this::MyBookingButtonActionPerformed);
-
-        Vehicles.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
-        Vehicles.setText("🚗 Vehicles      ");
-        Vehicles.setBorderPainted(false);
-        Vehicles.addActionListener(this::VehiclesActionPerformed);
-
-        Profilebutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
-        Profilebutton.setText("👤 Profile        ");
-        Profilebutton.setBorderPainted(false);
-        Profilebutton.addActionListener(this::ProfilebuttonActionPerformed);
-
-        Logoutbutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
-        Logoutbutton.setText("←] Logout     ");
-        Logoutbutton.setBorderPainted(false);
-
         javax.swing.GroupLayout DashBoardLayout = new javax.swing.GroupLayout(DashBoard);
         DashBoard.setLayout(DashBoardLayout);
         DashBoardLayout.setHorizontalGroup(
             DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DashBoardLayout.createSequentialGroup()
-                .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(MyBookingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Profilebutton, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Logoutbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Vehicles, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DashBoardLayout.createSequentialGroup()
-                .addComponent(DB, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         DashBoardLayout.setVerticalGroup(
             DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DashBoardLayout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(DB, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(MyBookingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Vehicles, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Profilebutton, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(232, 232, 232)
-                .addComponent(Logoutbutton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(19, 19, 19))
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\5b66283c-5390-484e-8b16-33198ac3b4e1.jpg")); // NOI18N
         jLabel1.setText("jLabel1");
 
         MyBookingsTxt.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -680,7 +626,6 @@ public class NewJFrame extends javax.swing.JFrame {
 
         TabbedBody.addTab("Upcomming", UpcommingTab);
 
-        Agent_Pfp.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\download (2).png")); // NOI18N
         Agent_Pfp.setText("jLabel44");
 
         Agent_Name.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
@@ -730,45 +675,33 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGap(23, 23, 23))
         );
 
+        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo.png"))); // NOI18N
+        jLabel63.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(DashBoard, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 177, Short.MAX_VALUE)
-                    .addComponent(DVRlogo, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel63, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(DashBoard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(DVRlogo, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel63)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(DashBoard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void DBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DBActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_DBActionPerformed
-
-    private void MyBookingButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MyBookingButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_MyBookingButtonActionPerformed
-
-    private void ProfilebuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilebuttonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ProfilebuttonActionPerformed
-
-    private void VehiclesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VehiclesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_VehiclesActionPerformed
 
     private void Cancel_BookingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cancel_BookingActionPerformed
         // TODO add your handling code here:
@@ -800,7 +733,7 @@ public class NewJFrame extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new NewJFrame().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new Agent_MyBookings().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -821,8 +754,6 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel Customer_Name;
     private javax.swing.JLabel Customer_Phone;
     private javax.swing.JLabel Customer_mail;
-    private javax.swing.JButton DB;
-    private javax.swing.JLabel DVRlogo;
     private javax.swing.JPanel DashBoard;
     private javax.swing.JButton Download_Invoice;
     private javax.swing.JLabel DropOffLocation;
@@ -830,9 +761,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel Insurance;
     private javax.swing.JLabel InsurancePrice;
     private javax.swing.JPanel LocationPanel;
-    private javax.swing.JButton Logoutbutton;
     private javax.swing.JButton Modify_Booking;
-    private javax.swing.JButton MyBookingButton;
     private javax.swing.JLabel MyBookingsTxt;
     private javax.swing.JLabel Paid_Date;
     private javax.swing.JLabel PaymentMethod;
@@ -841,7 +770,6 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel PickupLocation;
     private javax.swing.JLabel PickupTxt;
     private javax.swing.JPanel PricePanel;
-    private javax.swing.JButton Profilebutton;
     private javax.swing.JLabel PuDatenTime;
     private javax.swing.JLabel RDateNTIME;
     private javax.swing.JLabel RentalDuration;
@@ -858,7 +786,6 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel TotalAmount;
     private javax.swing.JLabel TotalTxt;
     private javax.swing.JPanel UpcommingTab;
-    private javax.swing.JButton Vehicles;
     private javax.swing.JButton ViewDetailsButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel20;
@@ -870,6 +797,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel63;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }

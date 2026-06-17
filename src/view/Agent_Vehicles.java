@@ -100,6 +100,7 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jLabel61 = new javax.swing.JLabel();
         jLabel62 = new javax.swing.JLabel();
         jLabel63 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -524,6 +525,8 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jLabel63.setText("SUV");
         jPanel2.add(jLabel63);
         jLabel63.setBounds(600, 830, 30, 16);
+        jPanel2.add(jPanel1);
+        jPanel1.setBounds(0, 0, 230, 910);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(0, 0, 1710, 1010);
@@ -632,6 +635,7 @@ public class Agent_Vehicles extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }

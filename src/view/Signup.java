@@ -45,18 +45,16 @@ public class Signup extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
         jTextField8 = new javax.swing.JTextField();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel10 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel13 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
 
         jCheckBox1.setText("jCheckBox1");
 
@@ -73,148 +71,81 @@ public class Signup extends javax.swing.JPanel {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
+        setBackground(new java.awt.Color(239, 239, 239));
         setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jLabel1.setText("Username");
         add(jLabel1);
-        jLabel1.setBounds(90, 170, 90, 16);
+        jLabel1.setBounds(430, 220, 100, 16);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel2.setText("Phone Number");
         add(jLabel2);
-        jLabel2.setBounds(90, 230, 160, 16);
+        jLabel2.setBounds(430, 280, 170, 16);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel3.setText("Password");
         add(jLabel3);
-        jLabel3.setBounds(90, 300, 80, 16);
+        jLabel3.setBounds(430, 350, 90, 16);
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel4.setText(" Email Address");
         add(jLabel4);
-        jLabel4.setBounds(310, 170, 100, 16);
+        jLabel4.setBounds(650, 220, 110, 16);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel5.setText("Date Of Birth");
         add(jLabel5);
-        jLabel5.setBounds(310, 230, 160, 16);
+        jLabel5.setBounds(650, 280, 170, 16);
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel6.setText("Confirm Password");
         add(jLabel6);
-        jLabel6.setBounds(310, 300, 130, 16);
+        jLabel6.setBounds(650, 350, 140, 16);
 
         jTextField1.addActionListener(this::jTextField1ActionPerformed);
         add(jTextField1);
-        jTextField1.setBounds(90, 200, 160, 22);
+        jTextField1.setBounds(430, 250, 170, 22);
 
         jTextField3.addActionListener(this::jTextField3ActionPerformed);
         add(jTextField3);
-        jTextField3.setBounds(90, 260, 160, 22);
+        jTextField3.setBounds(430, 310, 170, 22);
 
         jTextField4.addActionListener(this::jTextField4ActionPerformed);
         add(jTextField4);
-        jTextField4.setBounds(310, 260, 160, 22);
+        jTextField4.setBounds(650, 310, 170, 22);
         add(jTextField5);
-        jTextField5.setBounds(310, 330, 160, 22);
+        jTextField5.setBounds(650, 380, 170, 22);
         add(jTextField6);
-        jTextField6.setBounds(90, 330, 160, 22);
+        jTextField6.setBounds(430, 380, 170, 22);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel7.setText("Driver's License Number");
         add(jLabel7);
-        jLabel7.setBounds(90, 370, 180, 16);
+        jLabel7.setBounds(430, 420, 190, 16);
 
         jTextField7.addActionListener(this::jTextField7ActionPerformed);
         add(jTextField7);
-        jTextField7.setBounds(90, 400, 394, 22);
+        jTextField7.setBounds(420, 450, 410, 22);
 
         jButton1.setText("Register");
         add(jButton1);
-        jButton1.setBounds(240, 530, 80, 23);
+        jButton1.setBounds(580, 580, 90, 23);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel8.setText("Address");
         add(jLabel8);
-        jLabel8.setBounds(90, 440, 100, 16);
+        jLabel8.setBounds(430, 490, 110, 16);
         add(jTextField8);
-        jTextField8.setBounds(90, 470, 394, 22);
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/thecarimages.png"))); // NOI18N
-        jLabel9.setText("jLabel9");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 1, Short.MAX_VALUE)
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 517, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        add(jPanel1);
-        jPanel1.setBounds(547, 95, 326, 529);
+        jTextField8.setBounds(420, 520, 410, 22);
 
         jTextField2.addActionListener(this::jTextField2ActionPerformed);
         add(jTextField2);
-        jTextField2.setBounds(310, 200, 160, 22);
+        jTextField2.setBounds(650, 250, 170, 22);
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel10.setText("Already have an account?");
-
-        jButton2.setText("Login");
-        jButton2.addActionListener(this::jButton2ActionPerformed);
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/dsgbasgzyuTxfcgeqhsa.jpg"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel13)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 444, Short.MAX_VALUE)
-                .addComponent(jLabel10)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
-                .addContainerGap())
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(61, Short.MAX_VALUE)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(jButton2))
-                .addContainerGap())
-        );
-
-        add(jPanel3);
-        jPanel3.setBounds(0, 0, 870, 90);
-
+        jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel12.setText("Create Your Account");
 
@@ -223,8 +154,8 @@ public class Signup extends javax.swing.JPanel {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, 284, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabel12)
+                .addGap(0, 14, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -232,7 +163,7 @@ public class Signup extends javax.swing.JPanel {
         );
 
         add(jPanel2);
-        jPanel2.setBounds(90, 110, 290, 30);
+        jPanel2.setBounds(430, 160, 190, 30);
 
         jLabel11.setText("Join Driveway and start your journey with us");
 
@@ -241,18 +172,55 @@ public class Signup extends javax.swing.JPanel {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 112, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jLabel11)
-                .addGap(0, 4, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         add(jPanel4);
-        jPanel4.setBounds(90, 140, 360, 20);
+        jPanel4.setBounds(430, 190, 250, 20);
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/thecarimages.png"))); // NOI18N
+        jLabel9.setText("jLabel9");
+        add(jLabel9);
+        jLabel9.setBounds(860, 150, 330, 517);
+
+        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo.png"))); // NOI18N
+        jLabel63.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        add(jLabel63);
+        jLabel63.setBounds(10, 10, 204, 124);
+
+        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabel10.setText("Already have an account?");
+        add(jLabel10);
+        jLabel10.setBounds(1280, 10, 150, 16);
+
+        jButton2.setText("Login");
+        jButton2.addActionListener(this::jButton2ActionPerformed);
+        add(jButton2);
+        jButton2.setBounds(1430, 10, 90, 23);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 800, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 540, Short.MAX_VALUE)
+        );
+
+        add(jPanel1);
+        jPanel1.setBounds(410, 140, 800, 540);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -289,20 +257,18 @@ public class Signup extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;

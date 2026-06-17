@@ -839,4 +839,10 @@ public class booking_confirm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JSlider jSlider1;
     // End of variables declaration//GEN-END:variables
+
+    private static class Dashboard {
+
+        public Dashboard() {
+        }
+    }
 }
