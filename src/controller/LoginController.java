@@ -5,11 +5,8 @@
 package controller;
 
 import dao.UserDao_Login;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
-import model.UserData;
-import view.Login;
+import model.UserData_Login;
 
 /**
  *
@@ -17,23 +14,21 @@ import view.Login;
  */
 public class LoginController {
 
-    private final UserDao userDao = new UserDao();
-    private final Login userView;
-    
+    private UserDao_Login userDao = new UserDao_Login();
 
-    public LoginController(Login userView) {
-        this.userView = userView;
-      
+    public UserData_Login handleLogin(String username, String password) {
+        if (username == null || username.trim().isEmpty() || password == null || password.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Username and Password cannot be empty!", "Validation Error", JOptionPane.WARNING_MESSAGE);
+            return null;
+        }
+
+        UserData_Login loggedUser = userDao.authenticateUser(username, password);
+
+        if (loggedUser != null) {
+            JOptionPane.showMessageDialog(null, "Welcome back, " + loggedUser.getUsername() + "!", "Login Success", JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(null, "Invalid username or password.", "Login Failed", JOptionPane.ERROR_MESSAGE);
+        }
+        return loggedUser;
     }
-
-    public void open() {
-        this.userView.setVisible(true);
-    }
-
-    public void close() {
-        this.userView.dispose();
-    }
-
-    
-    
 }

@@ -1,5 +1,9 @@
 package view;
-
+import dao.UserDao_Login;
+import model.UserData_Login;
+import view.User_Dashboard;
+import view.Signup;
+import javax.swing.JOptionPane;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -34,16 +38,15 @@ public class login extends javax.swing.JFrame {
         Password_icon = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        Login_button = new javax.swing.JButton();
-        jLabel5 = new javax.swing.JLabel();
+        Signup_button = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         Username_icon = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        Logo = new javax.swing.JLabel();
-        Username = new javax.swing.JTextField();
-        Password = new javax.swing.JTextField();
-        ForgotPassword = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
+        Username_Label = new javax.swing.JTextField();
+        Password_Label = new javax.swing.JTextField();
+        Login_button1 = new javax.swing.JButton();
+        ForgotPassword_Button = new javax.swing.JButton();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -51,97 +54,115 @@ public class login extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(null);
 
-        Password_icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/download__1_-removebg-preview.png"))); // NOI18N
+        Password_icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/download__1_-removebg-preview.png"))); // NOI18N
         jPanel1.add(Password_icon);
-        Password_icon.setBounds(40, 230, 30, 30);
+        Password_icon.setBounds(140, 230, 30, 30);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel2.setText("Welcome Back");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(90, 70, 130, 41);
+        jLabel2.setBounds(200, 70, 130, 41);
 
         jLabel3.setBackground(new java.awt.Color(204, 204, 204));
         jLabel3.setForeground(new java.awt.Color(153, 153, 153));
         jLabel3.setText("Dont have an accocunt?");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(20, 370, 130, 41);
+        jLabel3.setBounds(150, 370, 130, 41);
 
-        Login_button.setBackground(new java.awt.Color(51, 102, 255));
-        Login_button.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        Login_button.setText("Login");
-        Login_button.addActionListener(this::Login_buttonActionPerformed);
-        jPanel1.add(Login_button);
-        Login_button.setBounds(50, 320, 200, 30);
-
-        jLabel5.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel5.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel5.setText("Signup");
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(150, 370, 40, 41);
+        Signup_button.setForeground(new java.awt.Color(51, 102, 255));
+        Signup_button.setText("Signup");
+        Signup_button.addActionListener(this::Signup_buttonActionPerformed);
+        jPanel1.add(Signup_button);
+        Signup_button.setBounds(280, 380, 70, 20);
 
         jLabel6.setBackground(new java.awt.Color(204, 204, 204));
         jLabel6.setForeground(new java.awt.Color(153, 153, 153));
         jLabel6.setText("Login to your account and continue your journey with us.");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(9, 110, 310, 40);
+        jLabel6.setBounds(100, 110, 310, 40);
 
-        Username_icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/download-removebg-preview.png"))); // NOI18N
+        Username_icon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/download-removebg-preview.png"))); // NOI18N
         jPanel1.add(Username_icon);
-        Username_icon.setBounds(40, 180, 30, 30);
+        Username_icon.setBounds(140, 180, 30, 30);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        Username_Label.setText("Username");
+        Username_Label.addActionListener(this::Username_LabelActionPerformed);
+        jPanel1.add(Username_Label);
+        Username_Label.setBounds(190, 180, 180, 30);
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 310, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
-        );
+        Password_Label.setText("Password");
+        jPanel1.add(Password_Label);
+        Password_Label.setBounds(190, 230, 180, 30);
 
-        jPanel1.add(jPanel2);
-        jPanel2.setBounds(320, 0, 310, 450);
+        Login_button1.setBackground(new java.awt.Color(51, 102, 255));
+        Login_button1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        Login_button1.setText("Login");
+        Login_button1.addActionListener(this::Login_button1ActionPerformed);
+        jPanel1.add(Login_button1);
+        Login_button1.setBounds(150, 320, 200, 30);
 
-        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/WhatsApp Image 2026-05-18 at 7.00.43 PM.jpg"))); // NOI18N
-        Logo.setText("jLabel14");
-        jPanel1.add(Logo);
-        Logo.setBounds(0, 0, 130, 60);
-
-        Username.setText("Username");
-        Username.addActionListener(this::UsernameActionPerformed);
-        jPanel1.add(Username);
-        Username.setBounds(90, 180, 180, 30);
-
-        Password.setText("Password");
-        jPanel1.add(Password);
-        Password.setBounds(90, 230, 180, 30);
-
-        ForgotPassword.setForeground(new java.awt.Color(51, 102, 255));
-        ForgotPassword.setText("Forgot Password?");
-        jPanel1.add(ForgotPassword);
-        ForgotPassword.setBounds(170, 280, 100, 16);
+        ForgotPassword_Button.setForeground(new java.awt.Color(51, 102, 255));
+        ForgotPassword_Button.setText("Forgot Password?");
+        ForgotPassword_Button.addActionListener(this::ForgotPassword_ButtonActionPerformed);
+        jPanel1.add(ForgotPassword_Button);
+        ForgotPassword_Button.setBounds(240, 280, 130, 20);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 320, 450);
+        jPanel1.setBounds(520, 140, 510, 460);
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/right_side_cropped.png"))); // NOI18N
-        jLabel13.setText("jLabel13");
-        getContentPane().add(jLabel13);
-        jLabel13.setBounds(320, 0, 307, 439);
+        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo.png"))); // NOI18N
+        jLabel63.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        getContentPane().add(jLabel63);
+        jLabel63.setBounds(20, 10, 204, 124);
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/car og.png"))); // NOI18N
+        getContentPane().add(jLabel11);
+        jLabel11.setBounds(1220, 50, 304, 699);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void UsernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_UsernameActionPerformed
+    private void Username_LabelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Username_LabelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_UsernameActionPerformed
+    }//GEN-LAST:event_Username_LabelActionPerformed
 
-    private void Login_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Login_buttonActionPerformed
+    private void Signup_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Signup_buttonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Login_buttonActionPerformed
+    Signup signupFrame = new Signup();
+    signupFrame.setVisible(true);
+    this.dispose();
+    }//GEN-LAST:event_Signup_buttonActionPerformed
+
+    private void Login_button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Login_button1ActionPerformed
+        // TODO add your handling code here:
+          // Get text from YOUR exact UI components
+     String username = Username_Label.getText();
+    String password = Password_Label.getText();
+
+    if (username.trim().isEmpty() || password.trim().isEmpty()) {
+        JOptionPane.showMessageDialog(this, "Please enter both Username and Password.", "Validation Error", JOptionPane.WARNING_MESSAGE);
+        return;
+    }
+
+    UserDao_Login dao = new UserDao_Login();
+    UserData_Login loggedUser = dao.authenticateUser(username, password);
+
+    if (loggedUser != null) {
+        JOptionPane.showMessageDialog(this, "Welcome back, " + loggedUser.getUsername() + "!", "Login Success", JOptionPane.INFORMATION_MESSAGE);
+        User_Dashboard dashboard = new User_Dashboard();
+        dashboard.setVisible(true);
+        this.dispose();
+    } else {
+        JOptionPane.showMessageDialog(this, "Invalid Username or Password!", "Login Failed", JOptionPane.ERROR_MESSAGE);
+    }
+                
+    }//GEN-LAST:event_Login_button1ActionPerformed
+
+    private void ForgotPassword_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ForgotPassword_ButtonActionPerformed
+        // TODO add your handling code here:
+         JOptionPane.showMessageDialog(this, "Contact admin or check your email to reset password.", "Forgot Password", JOptionPane.INFORMATION_MESSAGE);
+        
+    }//GEN-LAST:event_ForgotPassword_ButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,20 +190,19 @@ public class login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel ForgotPassword;
-    private javax.swing.JButton Login_button;
-    private javax.swing.JLabel Logo;
-    private javax.swing.JTextField Password;
+    private javax.swing.JButton ForgotPassword_Button;
+    private javax.swing.JButton Login_button1;
+    private javax.swing.JTextField Password_Label;
     private javax.swing.JLabel Password_icon;
-    private javax.swing.JTextField Username;
+    private javax.swing.JButton Signup_button;
+    private javax.swing.JTextField Username_Label;
     private javax.swing.JLabel Username_icon;
-    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel63;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
 }

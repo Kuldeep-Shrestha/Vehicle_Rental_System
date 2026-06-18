@@ -4,31 +4,22 @@
  */
 package controller;
 
-
-import dao.UserDao;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import dao.UserDao_Signup;
 import javax.swing.JOptionPane;
-import model.UserData;
-import view.Login;
-import view.signup;
-
+import model.UserData_Signup;
+import view.login;
+import view.Signup;
 
 /**
  *
  * @author User
  */
 public class SignupController {
-    private final UserDao userDao = new UserDao();
-    private final signup userView;
+    private final UserDao_Signup userDao = new UserDao_Signup();
+    private final Signup userView;
 
-    public SignupController(signup userView) {
+    public SignupController(Signup userView) {
         this.userView = userView;
-
-        userView.addAddUserListener(new AddUserListener());
-        userView.addLoginListener(new LoginListener());
-        
-
     }
 
     public void open() {
@@ -39,41 +30,47 @@ public class SignupController {
         this.userView.dispose();
     }
 
-    class AddUserListener implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            try {
-                String name = userView.getUsernameField().getText();
-                String email = userView.getEmailField().getText();
-                String password = userView.getPasswordField().getText();
-                UserData user = new UserData(name, email, password);
-               
-                boolean check = userDao.checkUser(user);
+    // Handle registration directly
+    public void handleRegistration() {
+        try {
+            UserData_Signup user = new UserData_Signup();
+            user.setUsername(userView.Username_Label.getText());
+            user.setEmail(userView.Email_Label.getText());
+            user.setPhone(Integer.parseInt(userView.Phone_Label.getText()));
+            user.setD_O_B(userView.Dob_Label.getText());
+            user.setPassword(userView.Password_Label.getText());
+            user.setConfirm_Password(userView.ConfirmPassword_Label.getText());
+            user.setDriver_license(Integer.parseInt(userView.DriverLicense_Label.getText()));
+            user.setAddress(userView.Address_Label.getText());
 
-                if (check) {
-                    JOptionPane.showMessageDialog(userView, "Duplicate user");
-                } else {
-                    userDao.createUser(user);
-                    JOptionPane.showMessageDialog(userView, "Succesful");
-
-                }
-            } catch (Exception ex) {
-                System.out.println("Error adding user: " + ex.getMessage());
+            // Check if passwords match
+            if (!user.getPassword().equals(user.getConfirm_Password())) {
+                JOptionPane.showMessageDialog(userView, "Passwords do not match!", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
             }
 
-        }
+            boolean check = userDao.checkUser(user);
 
+            if (check) {
+                JOptionPane.showMessageDialog(userView, "Username or Email already exists!", "Duplicate User", JOptionPane.WARNING_MESSAGE);
+            } else {
+                userDao.createUser(user);
+                JOptionPane.showMessageDialog(userView, "Registration Successful! Please login.", "Success", JOptionPane.INFORMATION_MESSAGE);
+                userView.dispose();
+                new login().setVisible(true);
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(userView, "Please enter valid numbers for Phone and License.", "Error", JOptionPane.ERROR_MESSAGE);
+        } catch (Exception ex) {
+            System.out.println("Error adding user: " + ex.getMessage());
+            JOptionPane.showMessageDialog(userView, "Please fill all fields correctly.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
-    class LoginListener implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            Login loginView = new Login();
-            LoginController login = new LoginController(loginView);
-            close();
-            login.open();
-        }
+    // Go to Login
+    public void goToLogin() {
+        login loginView = new login();
+        loginView.setVisible(true);
+        userView.dispose();
     }
-    
-
 }
