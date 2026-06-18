@@ -29,10 +29,8 @@ public class User_Cancellation extends javax.swing.JFrame {
     private void initComponents() {
 
         Logo = new javax.swing.JPanel();
-        DVRlogo = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
         TopPart = new javax.swing.JPanel();
-        UserName = new javax.swing.JLabel();
-        Pfp = new javax.swing.JLabel();
         BAV = new javax.swing.JLabel();
         DashboardNavi = new javax.swing.JLabel();
         DashBoard = new javax.swing.JPanel();
@@ -128,33 +126,29 @@ public class User_Cancellation extends javax.swing.JFrame {
 
         Logo.setBackground(new java.awt.Color(255, 255, 255));
 
-        DVRlogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/LOGO .jpg"))); // NOI18N
-        DVRlogo.setText("jLabel1");
+        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo.png"))); // NOI18N
+        jLabel63.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         javax.swing.GroupLayout LogoLayout = new javax.swing.GroupLayout(Logo);
         Logo.setLayout(LogoLayout);
         LogoLayout.setHorizontalGroup(
             LogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(LogoLayout.createSequentialGroup()
-                .addComponent(DVRlogo, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jLabel63, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         LogoLayout.setVerticalGroup(
             LogoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(DVRlogo, javax.swing.GroupLayout.DEFAULT_SIZE, 85, Short.MAX_VALUE)
+            .addGroup(LogoLayout.createSequentialGroup()
+                .addComponent(jLabel63)
+                .addGap(0, 6, Short.MAX_VALUE))
         );
 
         getContentPane().add(Logo);
-        Logo.setBounds(0, 0, 172, 85);
+        Logo.setBounds(0, 0, 210, 130);
 
         TopPart.setBackground(new java.awt.Color(255, 255, 255));
-
-        UserName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        UserName.setText("User");
-        UserName.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-
-        Pfp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User.jpg"))); // NOI18N
-        Pfp.setText("jLabel4");
 
         BAV.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         BAV.setText("Cancel Booking");
@@ -168,58 +162,47 @@ public class User_Cancellation extends javax.swing.JFrame {
             .addGroup(TopPartLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(TopPartLayout.createSequentialGroup()
-                        .addComponent(DashboardNavi, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 593, Short.MAX_VALUE))
-                    .addGroup(TopPartLayout.createSequentialGroup()
-                        .addComponent(BAV, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                    .addComponent(DashboardNavi, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAV, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(789, Short.MAX_VALUE))
         );
         TopPartLayout.setVerticalGroup(
             TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(TopPartLayout.createSequentialGroup()
-                .addGap(4, 4, 4)
-                .addGroup(TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(UserName, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TopPartLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(BAV, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(BAV, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
                 .addComponent(DashboardNavi)
-                .addGap(12, 12, 12))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         getContentPane().add(TopPart);
-        TopPart.setBounds(178, 0, 1100, 85);
+        TopPart.setBounds(218, 0, 1290, 120);
 
         DashBoard.setBackground(new java.awt.Color(255, 255, 255));
 
-        DB.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
+        DB.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
         DB.setText("🏠 DashBoard  ");
         DB.setBorderPainted(false);
         DB.addActionListener(this::DBActionPerformed);
 
-        MyBookingButton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
+        MyBookingButton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
         MyBookingButton.setText("🗓️ My Bookings");
         MyBookingButton.setBorderPainted(false);
         MyBookingButton.addActionListener(this::MyBookingButtonActionPerformed);
 
-        Vehicles.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
+        Vehicles.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
         Vehicles.setText("🚗 Vehicles      ");
         Vehicles.setBorderPainted(false);
+        Vehicles.addActionListener(this::VehiclesActionPerformed);
 
-        Profilebutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
+        Profilebutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        Profilebutton.setForeground(new java.awt.Color(51, 102, 255));
         Profilebutton.setText("👤 Profile        ");
         Profilebutton.setBorderPainted(false);
         Profilebutton.addActionListener(this::ProfilebuttonActionPerformed);
 
-        Logoutbutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
+        Logoutbutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
         Logoutbutton.setText("←] Logout     ");
         Logoutbutton.setBorderPainted(false);
 
@@ -227,30 +210,42 @@ public class User_Cancellation extends javax.swing.JFrame {
         DashBoard.setLayout(DashBoardLayout);
         DashBoardLayout.setHorizontalGroup(
             DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(DB, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(MyBookingButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Vehicles, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Profilebutton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(Logoutbutton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(DashBoardLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DashBoardLayout.createSequentialGroup()
+                        .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(DashBoardLayout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Vehicles)
+                                    .addComponent(Profilebutton)))
+                            .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(MyBookingButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(DB, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(34, 34, 34))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DashBoardLayout.createSequentialGroup()
+                        .addComponent(Logoutbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(37, 37, 37))))
         );
         DashBoardLayout.setVerticalGroup(
             DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DashBoardLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(DB, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(MyBookingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(12, 12, 12)
                 .addComponent(Vehicles, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Profilebutton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 333, Short.MAX_VALUE)
-                .addComponent(Logoutbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 356, Short.MAX_VALUE)
+                .addComponent(Logoutbutton)
+                .addGap(50, 50, 50))
         );
 
         getContentPane().add(DashBoard);
-        DashBoard.setBounds(0, 91, 170, 560);
+        DashBoard.setBounds(0, 131, 210, 640);
 
         Body.setBackground(new java.awt.Color(255, 255, 255));
         Body.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
@@ -316,7 +311,7 @@ public class User_Cancellation extends javax.swing.JFrame {
                     .addComponent(PU_txt, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Pick_Uptxt, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Pickup_Address, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addContainerGap(99, Short.MAX_VALUE))
         );
         Pickup_PanelLayout.setVerticalGroup(
             Pickup_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -411,7 +406,7 @@ public class User_Cancellation extends javax.swing.JFrame {
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Dropoff_Panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(19, 19, 19))))
+                        .addGap(183, 183, 183))))
         );
         PaymentBodyLayout.setVerticalGroup(
             PaymentBodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -643,7 +638,6 @@ public class User_Cancellation extends javax.swing.JFrame {
 
         jLabel40.setText("Refunds will be processed within 3.5 business days.");
 
-        jLabel53.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-11 183748.jpg")); // NOI18N
         jLabel53.setText("jLabel49");
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -713,14 +707,12 @@ public class User_Cancellation extends javax.swing.JFrame {
                     .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jRadioButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(ReasonPanelLayout.createSequentialGroup()
-                        .addGroup(ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jRadioButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE)
-                            .addComponent(jRadioButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jRadioButton6))
+                    .addGroup(ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jRadioButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE)
+                        .addComponent(jRadioButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jRadioButton4)
-                    .addComponent(jRadioButton5))
+                    .addComponent(jRadioButton5)
+                    .addComponent(jRadioButton6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -741,9 +733,7 @@ public class User_Cancellation extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel30)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(ReasonPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton6))
+                .addComponent(jRadioButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jRadioButton2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -752,7 +742,9 @@ public class User_Cancellation extends javax.swing.JFrame {
                 .addComponent(jRadioButton4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jRadioButton5)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jRadioButton6)
+                .addGap(0, 25, Short.MAX_VALUE))
         );
 
         RefundingProcess.setBackground(new java.awt.Color(255, 255, 255));
@@ -773,7 +765,6 @@ public class User_Cancellation extends javax.swing.JFrame {
         Refund_Amount.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         Refund_Amount.setText("$00.00");
 
-        RA_Img.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-11 182527.jpg")); // NOI18N
         RA_Img.setText("jLabel49");
 
         javax.swing.GroupLayout RA_panelLayout = new javax.swing.GroupLayout(RA_panel);
@@ -782,7 +773,7 @@ public class User_Cancellation extends javax.swing.JFrame {
             RA_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RA_panelLayout.createSequentialGroup()
                 .addGap(12, 12, 12)
-                .addComponent(RA_Img, javax.swing.GroupLayout.PREFERRED_SIZE, 47, Short.MAX_VALUE)
+                .addComponent(RA_Img, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(RA_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Refund_Amount, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -809,7 +800,6 @@ public class User_Cancellation extends javax.swing.JFrame {
         Refund_Method.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         Refund_Method.setText("CreditCard (**** ***)");
 
-        RM_IMG.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-11 182741.jpg")); // NOI18N
         RM_IMG.setText("jLabel49");
 
         javax.swing.GroupLayout RM_PanelLayout = new javax.swing.GroupLayout(RM_Panel);
@@ -848,7 +838,6 @@ public class User_Cancellation extends javax.swing.JFrame {
         Est_RefundTime.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         Est_RefundTime.setText("3-5 Business Days");
 
-        ERT_Img.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-11 182959.jpg")); // NOI18N
         ERT_Img.setText("jLabel51");
 
         javax.swing.GroupLayout ERT_PanelLayout = new javax.swing.GroupLayout(ERT_Panel);
@@ -873,7 +862,7 @@ public class User_Cancellation extends javax.swing.JFrame {
                     .addComponent(ERT_Img, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Est_RefundTime)
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         RS_Panel.setBackground(new java.awt.Color(255, 255, 255));
@@ -887,7 +876,6 @@ public class User_Cancellation extends javax.swing.JFrame {
         Refund_Status.setText("To be initiated");
         Refund_Status.setOpaque(true);
 
-        RS_Img.setIcon(new javax.swing.ImageIcon("C:\\Users\\Apekshya\\Downloads\\Screenshot 2026-06-11 183240.jpg")); // NOI18N
         RS_Img.setText("jLabel49");
 
         javax.swing.GroupLayout RS_PanelLayout = new javax.swing.GroupLayout(RS_Panel);
@@ -950,7 +938,7 @@ public class User_Cancellation extends javax.swing.JFrame {
                     .addComponent(RA_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(RM_Panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(ERT_Panel, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         BackButton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
@@ -968,50 +956,51 @@ public class User_Cancellation extends javax.swing.JFrame {
         BodyLayout.setHorizontalGroup(
             BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BodyLayout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(RefundingProcess, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(BodyLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(RefundingProcess, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ReasonPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(BodyLayout.createSequentialGroup()
-                                .addComponent(PaymentBody, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE))))
-                    .addGroup(BodyLayout.createSequentialGroup()
-                        .addGap(57, 57, 57)
                         .addComponent(BackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(ConfirmButton, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
+                        .addComponent(ConfirmButton, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(ReasonPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(PaymentBody, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(BookingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(105, 105, 105))
+                .addGap(14, 14, 14))
         );
         BodyLayout.setVerticalGroup(
             BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BodyLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
                 .addGroup(BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(BodyLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(BookingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(BodyLayout.createSequentialGroup()
-                        .addGap(14, 14, 14)
                         .addComponent(PaymentBody, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(ReasonPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(ReasonPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(RefundingProcess, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(BackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ConfirmButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(RefundingProcess, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(BookingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ConfirmButton, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BackButton, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(31, 31, 31))
         );
 
         getContentPane().add(Body);
-        Body.setBounds(180, 90, 1150, 560);
+        Body.setBounds(220, 130, 1290, 640);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
+
+    private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BackButtonActionPerformed
 
     private void DBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DBActionPerformed
         // TODO add your handling code here:
@@ -1021,17 +1010,13 @@ public class User_Cancellation extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_MyBookingButtonActionPerformed
 
+    private void VehiclesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VehiclesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VehiclesActionPerformed
+
     private void ProfilebuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilebuttonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ProfilebuttonActionPerformed
-
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
-
-    private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BackButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1080,7 +1065,6 @@ public class User_Cancellation extends javax.swing.JFrame {
     private javax.swing.JButton ConfirmButton;
     private javax.swing.JButton DB;
     private javax.swing.JLabel DO_txt;
-    private javax.swing.JLabel DVRlogo;
     private javax.swing.JPanel DashBoard;
     private javax.swing.JLabel DashboardNavi;
     private javax.swing.JLabel DropOff_Date;
@@ -1099,7 +1083,6 @@ public class User_Cancellation extends javax.swing.JFrame {
     private javax.swing.JButton MyBookingButton;
     private javax.swing.JLabel PU_txt;
     private javax.swing.JPanel PaymentBody;
-    private javax.swing.JLabel Pfp;
     private javax.swing.JLabel Pick_Uptxt;
     private javax.swing.JLabel Pick_up;
     private javax.swing.JLabel Pickup_Address;
@@ -1131,7 +1114,6 @@ public class User_Cancellation extends javax.swing.JFrame {
     private javax.swing.JPanel TopPart;
     private javax.swing.JLabel Total;
     private javax.swing.JLabel Total_txt;
-    private javax.swing.JLabel UserName;
     private javax.swing.JLabel VehicleType;
     private javax.swing.JButton Vehicles;
     private javax.swing.JCheckBox jCheckBox1;
@@ -1142,6 +1124,7 @@ public class User_Cancellation extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel63;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel8;

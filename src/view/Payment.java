@@ -33,6 +33,8 @@ public class Payment extends javax.swing.JFrame {
         TopPart = new javax.swing.JPanel();
         BAV = new javax.swing.JLabel();
         DashboardNavi = new javax.swing.JLabel();
+        Pfp = new javax.swing.JLabel();
+        UserName = new javax.swing.JLabel();
         DashBoard = new javax.swing.JPanel();
         DB = new javax.swing.JButton();
         MyBookingButton = new javax.swing.JButton();
@@ -71,7 +73,7 @@ public class Payment extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel16 = new javax.swing.JLabel();
-        jToggleButton1 = new javax.swing.JToggleButton();
+        Continue_to_next_step = new javax.swing.JToggleButton();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -119,6 +121,12 @@ public class Payment extends javax.swing.JFrame {
 
         DashboardNavi.setText("Dashboard > Book a Vehicle > Pick-up & Drop-off > Review & Confirmation > Payment");
 
+        Pfp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User_profile.jpg"))); // NOI18N
+
+        UserName.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        UserName.setText("User");
+        UserName.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+
         javax.swing.GroupLayout TopPartLayout = new javax.swing.GroupLayout(TopPart);
         TopPart.setLayout(TopPartLayout);
         TopPartLayout.setHorizontalGroup(
@@ -126,16 +134,31 @@ public class Payment extends javax.swing.JFrame {
             .addGroup(TopPartLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(DashboardNavi, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BAV, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(794, Short.MAX_VALUE))
+                    .addGroup(TopPartLayout.createSequentialGroup()
+                        .addComponent(DashboardNavi, javax.swing.GroupLayout.PREFERRED_SIZE, 480, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(794, Short.MAX_VALUE))
+                    .addGroup(TopPartLayout.createSequentialGroup()
+                        .addComponent(BAV, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(UserName)
+                        .addGap(45, 45, 45))))
         );
         TopPartLayout.setVerticalGroup(
             TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TopPartLayout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(BAV)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addGroup(TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(TopPartLayout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addGroup(TopPartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BAV)
+                            .addComponent(Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TopPartLayout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(UserName)
+                        .addGap(18, 18, 18)))
                 .addComponent(DashboardNavi)
                 .addGap(33, 33, 33))
         );
@@ -177,17 +200,17 @@ public class Payment extends javax.swing.JFrame {
             .addGroup(DashBoardLayout.createSequentialGroup()
                 .addContainerGap(15, Short.MAX_VALUE)
                 .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(DashBoardLayout.createSequentialGroup()
-                            .addGap(6, 6, 6)
-                            .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(Vehicles)
-                                .addComponent(Profilebutton)))
-                        .addGroup(DashBoardLayout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DashBoardLayout.createSequentialGroup()
+                        .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(DashBoardLayout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Vehicles)
+                                    .addComponent(Profilebutton)))
                             .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(MyBookingButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(DB, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGap(34, 34, 34)))
+                                .addComponent(DB, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(34, 34, 34))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DashBoardLayout.createSequentialGroup()
                         .addComponent(Logoutbutton, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(37, 37, 37))))
@@ -244,8 +267,8 @@ public class Payment extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(ChooseeSewa, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(eSewaImg, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(eSewaImg)
+                .addGap(47, 47, 47)
                 .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(426, Short.MAX_VALUE))
         );
@@ -280,10 +303,10 @@ public class Payment extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(ChooseKhalti, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel6)
+                .addGap(42, 42, 42)
                 .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(449, Short.MAX_VALUE))
         );
         KhaltiPanelLayout.setVerticalGroup(
             KhaltiPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -316,10 +339,10 @@ public class Payment extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(ChooseIps, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jLabel4)
+                .addGap(46, 46, 46)
                 .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(440, Short.MAX_VALUE))
         );
         IpsPanelLayout.setVerticalGroup(
             IpsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -412,11 +435,11 @@ public class Payment extends javax.swing.JFrame {
         jLabel16.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel16.setText("Total");
 
-        jToggleButton1.setBackground(new java.awt.Color(204, 204, 255));
-        jToggleButton1.setForeground(new java.awt.Color(51, 102, 255));
-        jToggleButton1.setText("Continue to Next Step");
-        jToggleButton1.setBorder(null);
-        jToggleButton1.addActionListener(this::jToggleButton1ActionPerformed);
+        Continue_to_next_step.setBackground(new java.awt.Color(204, 204, 255));
+        Continue_to_next_step.setForeground(new java.awt.Color(51, 102, 255));
+        Continue_to_next_step.setText("Continue to Next Step");
+        Continue_to_next_step.setBorder(null);
+        Continue_to_next_step.addActionListener(this::Continue_to_next_stepActionPerformed);
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel17.setText("$0.00");
@@ -447,7 +470,7 @@ public class Payment extends javax.swing.JFrame {
             .addGroup(BookingPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(BookingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jToggleButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Continue_to_next_step, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(BookingPanelLayout.createSequentialGroup()
                         .addGroup(BookingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -521,7 +544,7 @@ public class Payment extends javax.swing.JFrame {
                     .addGroup(BookingPanelLayout.createSequentialGroup()
                         .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(4, 4, 4)))
-                .addComponent(jToggleButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                .addComponent(Continue_to_next_step, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
                 .addGap(12, 12, 12))
         );
 
@@ -555,9 +578,9 @@ public class Payment extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
+    private void Continue_to_next_stepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Continue_to_next_stepActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jToggleButton1ActionPerformed
+    }//GEN-LAST:event_Continue_to_next_stepActionPerformed
 
     private void DBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DBActionPerformed
         // TODO add your handling code here:
@@ -608,6 +631,7 @@ public class Payment extends javax.swing.JFrame {
     private javax.swing.JRadioButton ChooseIps;
     private javax.swing.JRadioButton ChooseKhalti;
     private javax.swing.JRadioButton ChooseeSewa;
+    private javax.swing.JToggleButton Continue_to_next_step;
     private javax.swing.JButton DB;
     private javax.swing.JPanel DashBoard;
     private javax.swing.JLabel DashboardNavi;
@@ -619,8 +643,10 @@ public class Payment extends javax.swing.JFrame {
     private javax.swing.JButton PayButton;
     private javax.swing.JPanel PaymentBody;
     private javax.swing.JLabel PaymentText;
+    private javax.swing.JLabel Pfp;
     private javax.swing.JButton Profilebutton;
     private javax.swing.JPanel TopPart;
+    private javax.swing.JLabel UserName;
     private javax.swing.JButton Vehicles;
     private javax.swing.JLabel eSewaImg;
     private javax.swing.JPanel eSewaPanel;
@@ -651,6 +677,5 @@ public class Payment extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 }

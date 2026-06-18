@@ -35,17 +35,17 @@ public class Signup extends javax.swing.JPanel {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        Username_Label = new javax.swing.JTextField();
+        Phone_Label = new javax.swing.JTextField();
+        Dob_Label = new javax.swing.JTextField();
+        ConfirmPassword_Label = new javax.swing.JTextField();
+        Password_Label = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        DriverLicense_Label = new javax.swing.JTextField();
+        RegistrationButton = new javax.swing.JButton();
         jLabel8 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
+        Address_Label = new javax.swing.JTextField();
+        Email_Label = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
@@ -53,7 +53,7 @@ public class Signup extends javax.swing.JPanel {
         jLabel9 = new javax.swing.JLabel();
         jLabel63 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        LoginButton = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
 
         jCheckBox1.setText("jCheckBox1");
@@ -105,45 +105,45 @@ public class Signup extends javax.swing.JPanel {
         add(jLabel6);
         jLabel6.setBounds(650, 350, 140, 16);
 
-        jTextField1.addActionListener(this::jTextField1ActionPerformed);
-        add(jTextField1);
-        jTextField1.setBounds(430, 250, 170, 22);
+        Username_Label.addActionListener(this::Username_LabelActionPerformed);
+        add(Username_Label);
+        Username_Label.setBounds(430, 250, 170, 22);
 
-        jTextField3.addActionListener(this::jTextField3ActionPerformed);
-        add(jTextField3);
-        jTextField3.setBounds(430, 310, 170, 22);
+        Phone_Label.addActionListener(this::Phone_LabelActionPerformed);
+        add(Phone_Label);
+        Phone_Label.setBounds(430, 310, 170, 22);
 
-        jTextField4.addActionListener(this::jTextField4ActionPerformed);
-        add(jTextField4);
-        jTextField4.setBounds(650, 310, 170, 22);
-        add(jTextField5);
-        jTextField5.setBounds(650, 380, 170, 22);
-        add(jTextField6);
-        jTextField6.setBounds(430, 380, 170, 22);
+        Dob_Label.addActionListener(this::Dob_LabelActionPerformed);
+        add(Dob_Label);
+        Dob_Label.setBounds(650, 310, 170, 22);
+        add(ConfirmPassword_Label);
+        ConfirmPassword_Label.setBounds(650, 380, 170, 22);
+        add(Password_Label);
+        Password_Label.setBounds(430, 380, 170, 22);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel7.setText("Driver's License Number");
         add(jLabel7);
         jLabel7.setBounds(430, 420, 190, 16);
 
-        jTextField7.addActionListener(this::jTextField7ActionPerformed);
-        add(jTextField7);
-        jTextField7.setBounds(420, 450, 410, 22);
+        DriverLicense_Label.addActionListener(this::DriverLicense_LabelActionPerformed);
+        add(DriverLicense_Label);
+        DriverLicense_Label.setBounds(420, 450, 410, 22);
 
-        jButton1.setText("Register");
-        add(jButton1);
-        jButton1.setBounds(580, 580, 90, 23);
+        RegistrationButton.setText("Register");
+        add(RegistrationButton);
+        RegistrationButton.setBounds(580, 580, 90, 23);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel8.setText("Address");
         add(jLabel8);
         jLabel8.setBounds(430, 490, 110, 16);
-        add(jTextField8);
-        jTextField8.setBounds(420, 520, 410, 22);
+        add(Address_Label);
+        Address_Label.setBounds(420, 520, 410, 22);
 
-        jTextField2.addActionListener(this::jTextField2ActionPerformed);
-        add(jTextField2);
-        jTextField2.setBounds(650, 250, 170, 22);
+        Email_Label.addActionListener(this::Email_LabelActionPerformed);
+        add(Email_Label);
+        Email_Label.setBounds(650, 250, 170, 22);
 
         jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -201,10 +201,10 @@ public class Signup extends javax.swing.JPanel {
         add(jLabel10);
         jLabel10.setBounds(1280, 10, 150, 16);
 
-        jButton2.setText("Login");
-        jButton2.addActionListener(this::jButton2ActionPerformed);
-        add(jButton2);
-        jButton2.setBounds(1430, 10, 90, 23);
+        LoginButton.setText("Login");
+        LoginButton.addActionListener(this::LoginButtonActionPerformed);
+        add(LoginButton);
+        LoginButton.setBounds(1430, 10, 90, 23);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -223,34 +223,42 @@ public class Signup extends javax.swing.JPanel {
         jPanel1.setBounds(410, 140, 800, 540);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void Username_LabelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Username_LabelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_Username_LabelActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void Email_LabelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Email_LabelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_Email_LabelActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void LoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_LoginButtonActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void Phone_LabelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Phone_LabelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_Phone_LabelActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void Dob_LabelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Dob_LabelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_Dob_LabelActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void DriverLicense_LabelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DriverLicense_LabelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_DriverLicense_LabelActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JTextField Address_Label;
+    private javax.swing.JTextField ConfirmPassword_Label;
+    private javax.swing.JTextField Dob_Label;
+    private javax.swing.JTextField DriverLicense_Label;
+    private javax.swing.JTextField Email_Label;
+    private javax.swing.JButton LoginButton;
+    private javax.swing.JTextField Password_Label;
+    private javax.swing.JTextField Phone_Label;
+    private javax.swing.JButton RegistrationButton;
+    private javax.swing.JTextField Username_Label;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
@@ -269,13 +277,5 @@ public class Signup extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
     // End of variables declaration//GEN-END:variables
 }
