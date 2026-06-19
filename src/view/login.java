@@ -102,32 +102,11 @@ public class login extends javax.swing.JFrame {
         jPanel1.add(Login_button1);
         Login_button1.setBounds(150, 320, 200, 30);
 
-<<<<<<< HEAD
         ForgotPassword_Button.setForeground(new java.awt.Color(51, 102, 255));
         ForgotPassword_Button.setText("Forgot Password?");
         ForgotPassword_Button.addActionListener(this::ForgotPassword_ButtonActionPerformed);
         jPanel1.add(ForgotPassword_Button);
         ForgotPassword_Button.setBounds(240, 280, 130, 20);
-=======
-        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/WhatsApp Image 2026-05-18 at 7.00.43 PM.jpg"))); // NOI18N
-        Logo.setText("jLabel14");
-        jPanel1.add(Logo);
-        Logo.setBounds(0, 0, 130, 60);
-
-        Username.setText("Username");
-        Username.addActionListener(this::UsernameActionPerformed);
-        jPanel1.add(Username);
-        Username.setBounds(90, 180, 180, 30);
-
-        Password.setText("password");
-        jPanel1.add(Password);
-        Password.setBounds(90, 230, 180, 30);
-
-        ForgotPassword.setForeground(new java.awt.Color(51, 102, 255));
-        ForgotPassword.setText("Forgot Password?");
-        jPanel1.add(ForgotPassword);
-        ForgotPassword.setBounds(170, 280, 100, 16);
->>>>>>> 3b3c9bbd70e984bd21545e563b3df4e51653e9a0
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(520, 150, 510, 460);
