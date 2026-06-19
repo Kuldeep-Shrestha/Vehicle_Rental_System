@@ -115,7 +115,7 @@ public class login extends javax.swing.JFrame {
         jPanel1.add(Username);
         Username.setBounds(90, 180, 180, 30);
 
-        Password.setText("Password");
+        Password.setText("password");
         jPanel1.add(Password);
         Password.setBounds(90, 230, 180, 30);
 
