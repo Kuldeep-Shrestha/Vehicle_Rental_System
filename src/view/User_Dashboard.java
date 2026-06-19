@@ -21,9 +21,7 @@ public class User_Dashboard extends javax.swing.JFrame {
      */
     public User_Dashboard() {
         initComponents();
-        Logoutbutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18));
-        Logoutbutton.setText("←] Logout     ");
-        Logoutbutton.setBorderPainted(false);
+        Logoutbutton.addActionListener(this::LogoutbuttonActionPerformed);   
 
     }
 

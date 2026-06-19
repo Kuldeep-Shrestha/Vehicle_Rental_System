@@ -1,5 +1,6 @@
 package view;
 import dao.UserDao_Login;
+import javax.swing.JFrame;
 import model.UserData_Login;
 import view.User_Dashboard;
 import view.Signup;
@@ -108,7 +109,7 @@ public class login extends javax.swing.JFrame {
         ForgotPassword_Button.setBounds(240, 280, 130, 20);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(520, 140, 510, 460);
+        jPanel1.setBounds(520, 150, 510, 460);
 
         jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo.png"))); // NOI18N
         jLabel63.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -129,6 +130,7 @@ public class login extends javax.swing.JFrame {
     private void Signup_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Signup_buttonActionPerformed
         // TODO add your handling code here:
     Signup signupFrame = new Signup();
+    signupFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
     signupFrame.setVisible(true);
     this.dispose();
     }//GEN-LAST:event_Signup_buttonActionPerformed

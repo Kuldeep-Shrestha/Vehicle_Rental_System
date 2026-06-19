@@ -760,7 +760,7 @@ public class booking_confirm extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new Dashboard().setVisible(true));
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
