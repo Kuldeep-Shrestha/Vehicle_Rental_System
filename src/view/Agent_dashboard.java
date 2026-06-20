@@ -119,6 +119,7 @@ public class Agent_dashboard extends javax.swing.JFrame {
         jLabel64.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         DB.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        DB.setForeground(new java.awt.Color(0, 102, 255));
         DB.setText("🏠 DashBoard  ");
         DB.setBorderPainted(false);
         DB.addActionListener(this::DBActionPerformed);
@@ -134,7 +135,6 @@ public class Agent_dashboard extends javax.swing.JFrame {
         Vehicles.addActionListener(this::VehiclesActionPerformed);
 
         Profilebutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
-        Profilebutton.setForeground(new java.awt.Color(51, 102, 255));
         Profilebutton.setText("👤 Profile        ");
         Profilebutton.setBorderPainted(false);
         Profilebutton.addActionListener(this::ProfilebuttonActionPerformed);

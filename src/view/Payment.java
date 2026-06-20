@@ -174,6 +174,7 @@ public class Payment extends javax.swing.JFrame {
         DB.addActionListener(this::DBActionPerformed);
 
         MyBookingButton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        MyBookingButton.setForeground(new java.awt.Color(0, 102, 255));
         MyBookingButton.setText("🗓️ My Bookings");
         MyBookingButton.setBorderPainted(false);
         MyBookingButton.addActionListener(this::MyBookingButtonActionPerformed);
@@ -184,7 +185,6 @@ public class Payment extends javax.swing.JFrame {
         Vehicles.addActionListener(this::VehiclesActionPerformed);
 
         Profilebutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
-        Profilebutton.setForeground(new java.awt.Color(51, 102, 255));
         Profilebutton.setText("👤 Profile        ");
         Profilebutton.setBorderPainted(false);
         Profilebutton.addActionListener(this::ProfilebuttonActionPerformed);

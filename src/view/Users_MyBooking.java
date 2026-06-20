@@ -89,6 +89,7 @@ public class Users_MyBooking extends javax.swing.JFrame {
         DB.addActionListener(this::DBActionPerformed);
 
         MyBookingButton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        MyBookingButton.setForeground(new java.awt.Color(0, 51, 255));
         MyBookingButton.setText("🗓️ My Bookings");
         MyBookingButton.setBorderPainted(false);
         MyBookingButton.addActionListener(this::MyBookingButtonActionPerformed);
@@ -99,7 +100,6 @@ public class Users_MyBooking extends javax.swing.JFrame {
         Vehicles.addActionListener(this::VehiclesActionPerformed);
 
         Profilebutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
-        Profilebutton.setForeground(new java.awt.Color(51, 102, 255));
         Profilebutton.setText("👤 Profile        ");
         Profilebutton.setBorderPainted(false);
         Profilebutton.addActionListener(this::ProfilebuttonActionPerformed);
@@ -304,10 +304,10 @@ public class Users_MyBooking extends javax.swing.JFrame {
 
         jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/car og.png"))); // NOI18N
 
-        Pfp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Agent_profile.jpg"))); // NOI18N
+        Pfp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/User_profile.jpg"))); // NOI18N
 
         UserName.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        UserName.setText("Agent");
+        UserName.setText("User");
         UserName.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -358,7 +358,7 @@ public class Users_MyBooking extends javax.swing.JFrame {
                         .addComponent(Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(UserName)
-                        .addGap(34, 34, 34))))
+                        .addGap(20, 20, 20))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -394,12 +394,10 @@ public class Users_MyBooking extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(13, 13, 13)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(9, 9, 9)
-                                .addComponent(UserName)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(UserName))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel44, javax.swing.GroupLayout.PREFERRED_SIZE, 699, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addContainerGap()

@@ -73,7 +73,6 @@ public class User_CancellationConfirm extends javax.swing.JFrame {
         Info_text1 = new javax.swing.JLabel();
         Info_txt2 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         BookingPanel = new javax.swing.JPanel();
         BS_txt = new javax.swing.JLabel();
@@ -500,8 +499,6 @@ public class User_CancellationConfirm extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jButton1.setText("Go back");
-
         jButton2.setText("Go back");
 
         BookingPanel.setBackground(new java.awt.Color(255, 255, 255));
@@ -712,11 +709,6 @@ public class User_CancellationConfirm extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(BookingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
-            .addGroup(BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BodyLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jButton1)
-                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         BodyLayout.setVerticalGroup(
             BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -735,11 +727,6 @@ public class User_CancellationConfirm extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
                 .addGap(25, 25, 25))
-            .addGroup(BodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BodyLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jButton1)
-                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         getContentPane().add(Body);
@@ -840,7 +827,6 @@ public class User_CancellationConfirm extends javax.swing.JFrame {
     private javax.swing.JButton Vehicles;
     private javax.swing.JLabel cacellation_Confirmation2;
     private javax.swing.JLabel est_img;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;

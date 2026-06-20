@@ -601,12 +601,12 @@ public class Agent_AddNewVehicles extends javax.swing.JFrame {
         MyBookingButton.addActionListener(this::MyBookingButtonActionPerformed);
 
         Vehicles.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        Vehicles.setForeground(new java.awt.Color(0, 102, 255));
         Vehicles.setText("🚗 Vehicles      ");
         Vehicles.setBorderPainted(false);
         Vehicles.addActionListener(this::VehiclesActionPerformed);
 
         Profilebutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
-        Profilebutton.setForeground(new java.awt.Color(51, 102, 255));
         Profilebutton.setText("👤 Profile        ");
         Profilebutton.setBorderPainted(false);
         Profilebutton.addActionListener(this::ProfilebuttonActionPerformed);
@@ -683,7 +683,7 @@ public class Agent_AddNewVehicles extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(Vehicles, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(12, 12, 12)
-                        .addComponent(Profilebutton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Profilebutton, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(Logoutbutton)
                         .addGap(71, 71, 71))))

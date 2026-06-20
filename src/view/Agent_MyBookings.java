@@ -29,6 +29,11 @@ public class Agent_MyBookings extends javax.swing.JFrame {
     private void initComponents() {
 
         DashBoard = new javax.swing.JPanel();
+        DB = new javax.swing.JButton();
+        MyBookingButton = new javax.swing.JButton();
+        Vehicles = new javax.swing.JButton();
+        Profilebutton = new javax.swing.JButton();
+        Logoutbutton = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         MyBookingsTxt = new javax.swing.JLabel();
@@ -84,34 +89,84 @@ public class Agent_MyBookings extends javax.swing.JFrame {
         jLabel33 = new javax.swing.JLabel();
         ActionsPanel = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
-        Modify_Booking = new javax.swing.JButton();
-        Download_Invoice = new javax.swing.JButton();
-        Cancel_Booking = new javax.swing.JButton();
-        Agent_Pfp = new javax.swing.JLabel();
+        Modify_Booking_Button = new javax.swing.JButton();
+        Cancel_Booking_Button = new javax.swing.JButton();
         Agent_Name = new javax.swing.JLabel();
+        Pfp = new javax.swing.JLabel();
         jLabel63 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         DashBoard.setBackground(new java.awt.Color(255, 255, 255));
         DashBoard.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
         DashBoard.setForeground(new java.awt.Color(221, 221, 221));
 
+        DB.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        DB.setText("🏠 DashBoard  ");
+        DB.setBorderPainted(false);
+        DB.addActionListener(this::DBActionPerformed);
+
+        MyBookingButton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        MyBookingButton.setForeground(new java.awt.Color(0, 102, 255));
+        MyBookingButton.setText("🗓️ My Bookings");
+        MyBookingButton.setBorderPainted(false);
+        MyBookingButton.addActionListener(this::MyBookingButtonActionPerformed);
+
+        Vehicles.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        Vehicles.setText("🚗 Vehicles      ");
+        Vehicles.setBorderPainted(false);
+        Vehicles.addActionListener(this::VehiclesActionPerformed);
+
+        Profilebutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        Profilebutton.setText("👤 Profile        ");
+        Profilebutton.setBorderPainted(false);
+        Profilebutton.addActionListener(this::ProfilebuttonActionPerformed);
+
+        Logoutbutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        Logoutbutton.setText("←] Logout     ");
+        Logoutbutton.setBorderPainted(false);
+
         javax.swing.GroupLayout DashBoardLayout = new javax.swing.GroupLayout(DashBoard);
         DashBoard.setLayout(DashBoardLayout);
         DashBoardLayout.setHorizontalGroup(
             DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addComponent(DB, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(MyBookingButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(DashBoardLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Logoutbutton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(DashBoardLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Vehicles)
+                    .addComponent(Profilebutton))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         DashBoardLayout.setVerticalGroup(
             DashBoardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(DashBoardLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(DB, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(MyBookingButton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(Vehicles, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(Profilebutton, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 395, Short.MAX_VALUE)
+                .addComponent(Logoutbutton)
+                .addGap(29, 29, 29))
         );
+
+        getContentPane().add(DashBoard);
+        DashBoard.setBounds(0, 130, 204, 660);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
 
-        jLabel1.setText("jLabel1");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/car og.png"))); // NOI18N
 
         MyBookingsTxt.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         MyBookingsTxt.setForeground(new java.awt.Color(0, 0, 51));
@@ -545,19 +600,15 @@ public class Agent_MyBookings extends javax.swing.JFrame {
         jLabel21.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel21.setText("Actions");
 
-        Modify_Booking.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Modify_Booking.setForeground(new java.awt.Color(51, 0, 255));
-        Modify_Booking.setText("Modify Booking");
-        Modify_Booking.addActionListener(this::Modify_BookingActionPerformed);
+        Modify_Booking_Button.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Modify_Booking_Button.setForeground(new java.awt.Color(51, 0, 255));
+        Modify_Booking_Button.setText("Modify Booking");
+        Modify_Booking_Button.addActionListener(this::Modify_Booking_ButtonActionPerformed);
 
-        Download_Invoice.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Download_Invoice.setForeground(new java.awt.Color(51, 0, 255));
-        Download_Invoice.setText("Download Invoice");
-
-        Cancel_Booking.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        Cancel_Booking.setForeground(new java.awt.Color(204, 0, 0));
-        Cancel_Booking.setText("Cancel Booking");
-        Cancel_Booking.addActionListener(this::Cancel_BookingActionPerformed);
+        Cancel_Booking_Button.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        Cancel_Booking_Button.setForeground(new java.awt.Color(204, 0, 0));
+        Cancel_Booking_Button.setText("Cancel Booking");
+        Cancel_Booking_Button.addActionListener(this::Cancel_Booking_ButtonActionPerformed);
 
         javax.swing.GroupLayout ActionsPanelLayout = new javax.swing.GroupLayout(ActionsPanel);
         ActionsPanel.setLayout(ActionsPanelLayout);
@@ -570,9 +621,8 @@ public class Agent_MyBookings extends javax.swing.JFrame {
                     .addGroup(ActionsPanelLayout.createSequentialGroup()
                         .addGap(71, 71, 71)
                         .addGroup(ActionsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Cancel_Booking, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Download_Invoice, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
-                            .addComponent(Modify_Booking, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(Cancel_Booking_Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Modify_Booking_Button, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE))))
                 .addGap(92, 92, 92))
         );
         ActionsPanelLayout.setVerticalGroup(
@@ -581,12 +631,10 @@ public class Agent_MyBookings extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Modify_Booking, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Modify_Booking_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Cancel_Booking, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Download_Invoice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(Cancel_Booking_Button, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout UpcommingTabLayout = new javax.swing.GroupLayout(UpcommingTab);
@@ -621,95 +669,93 @@ public class Agent_MyBookings extends javax.swing.JFrame {
                 .addGroup(UpcommingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(ActionsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(PricePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         TabbedBody.addTab("Upcomming", UpcommingTab);
 
-        Agent_Pfp.setText("jLabel44");
-
         Agent_Name.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         Agent_Name.setText("Agent");
+
+        Pfp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Agent_profile.jpg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TabbedBody, javax.swing.GroupLayout.PREFERRED_SIZE, 812, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(MyBookingsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Text, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addComponent(Text, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TabbedBody, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MyBookingsTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 393, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 274, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Agent_Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Agent_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(12, 12, 12))))
+                        .addComponent(Pfp, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Agent_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(MyBookingsTxt)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Text, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(TabbedBody, javax.swing.GroupLayout.PREFERRED_SIZE, 608, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(13, 13, 13))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Agent_Pfp, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Agent_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(23, 23, 23))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(MyBookingsTxt)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Text, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(TabbedBody, javax.swing.GroupLayout.PREFERRED_SIZE, 608, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(13, 13, 13))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 6, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(Agent_Name, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(11, 11, 11))
+                            .addComponent(Pfp, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel1)
+                        .addContainerGap())))
         );
+
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(207, 0, 1220, 784);
 
         jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo.png"))); // NOI18N
         jLabel63.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel63, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(DashBoard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel63)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(DashBoard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        getContentPane().add(jLabel63);
+        jLabel63.setBounds(0, 0, 204, 124);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Cancel_BookingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cancel_BookingActionPerformed
+    private void Cancel_Booking_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cancel_Booking_ButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Cancel_BookingActionPerformed
+    }//GEN-LAST:event_Cancel_Booking_ButtonActionPerformed
 
-    private void Modify_BookingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Modify_BookingActionPerformed
+    private void Modify_Booking_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Modify_Booking_ButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Modify_BookingActionPerformed
+    }//GEN-LAST:event_Modify_Booking_ButtonActionPerformed
+
+    private void DBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DBActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DBActionPerformed
+
+    private void MyBookingButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MyBookingButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MyBookingButtonActionPerformed
+
+    private void VehiclesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VehiclesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VehiclesActionPerformed
+
+    private void ProfilebuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilebuttonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ProfilebuttonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -739,13 +785,12 @@ public class Agent_MyBookings extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel ActionsPanel;
     private javax.swing.JLabel Agent_Name;
-    private javax.swing.JLabel Agent_Pfp;
     private javax.swing.JLabel BaseRate;
     private javax.swing.JLabel BaseRatePrice;
     private javax.swing.JPanel BookingDetailsPanel;
     private javax.swing.JLabel BookingDetailsTxt;
     private javax.swing.JLabel BookingID;
-    private javax.swing.JButton Cancel_Booking;
+    private javax.swing.JButton Cancel_Booking_Button;
     private javax.swing.JPanel CarDetailPanel;
     private javax.swing.JLabel CarName;
     private javax.swing.JLabel CarPicture;
@@ -754,22 +799,26 @@ public class Agent_MyBookings extends javax.swing.JFrame {
     private javax.swing.JLabel Customer_Name;
     private javax.swing.JLabel Customer_Phone;
     private javax.swing.JLabel Customer_mail;
+    private javax.swing.JButton DB;
     private javax.swing.JPanel DashBoard;
-    private javax.swing.JButton Download_Invoice;
     private javax.swing.JLabel DropOffLocation;
     private javax.swing.JLabel IDtxt;
     private javax.swing.JLabel Insurance;
     private javax.swing.JLabel InsurancePrice;
     private javax.swing.JPanel LocationPanel;
-    private javax.swing.JButton Modify_Booking;
+    private javax.swing.JButton Logoutbutton;
+    private javax.swing.JButton Modify_Booking_Button;
+    private javax.swing.JButton MyBookingButton;
     private javax.swing.JLabel MyBookingsTxt;
     private javax.swing.JLabel Paid_Date;
     private javax.swing.JLabel PaymentMethod;
     private javax.swing.JPanel PaymentMethodPanel;
     private javax.swing.JLabel PaymentTxt;
+    private javax.swing.JLabel Pfp;
     private javax.swing.JLabel PickupLocation;
     private javax.swing.JLabel PickupTxt;
     private javax.swing.JPanel PricePanel;
+    private javax.swing.JButton Profilebutton;
     private javax.swing.JLabel PuDatenTime;
     private javax.swing.JLabel RDateNTIME;
     private javax.swing.JLabel RentalDuration;
@@ -786,6 +835,7 @@ public class Agent_MyBookings extends javax.swing.JFrame {
     private javax.swing.JLabel TotalAmount;
     private javax.swing.JLabel TotalTxt;
     private javax.swing.JPanel UpcommingTab;
+    private javax.swing.JButton Vehicles;
     private javax.swing.JButton ViewDetailsButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel20;

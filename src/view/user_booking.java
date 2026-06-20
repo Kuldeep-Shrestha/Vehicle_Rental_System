@@ -32,12 +32,6 @@ public class user_booking extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jLabel4 = new javax.swing.JLabel();
-        jButton7 = new javax.swing.JButton();
         jLabel64 = new javax.swing.JLabel();
         jLabel65 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
@@ -73,8 +67,8 @@ public class user_booking extends javax.swing.JFrame {
         jSeparator4 = new javax.swing.JSeparator();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        CancelBooking_Button = new javax.swing.JButton();
+        LeaveFeedback_Button = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         jLabel32 = new javax.swing.JLabel();
         jSeparator5 = new javax.swing.JSeparator();
@@ -123,6 +117,12 @@ public class user_booking extends javax.swing.JFrame {
         jLabel69 = new javax.swing.JLabel();
         jLabel70 = new javax.swing.JLabel();
         jLabel71 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
+        DB = new javax.swing.JButton();
+        MyBookingButton = new javax.swing.JButton();
+        Vehicles = new javax.swing.JButton();
+        Profilebutton = new javax.swing.JButton();
+        Logoutbutton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -135,83 +135,29 @@ public class user_booking extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/Gemini_Generated_Image_hyxex8hyxex8hyxe (3) (1).jpg"))); // NOI18N
         jPanel2.add(jLabel1);
-        jLabel1.setBounds(0, 0, 241, 120);
+        jLabel1.setBounds(0, 0, 210, 130);
 
         jLabel2.setFont(new java.awt.Font("Serif", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 51, 102));
         jLabel2.setText("Booking Details");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(270, 20, 274, 58);
+        jLabel2.setBounds(210, 0, 274, 58);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Semilight", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 51, 153));
         jLabel3.setText("My Bookings  >");
         jPanel2.add(jLabel3);
-        jLabel3.setBounds(360, 70, 101, 29);
-
-        jButton1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/exit.png"))); // NOI18N
-        jButton1.setText("Log-Out");
-        jButton1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton1.setIconTextGap(20);
-        jButton1.addActionListener(this::jButton1ActionPerformed);
-        jPanel2.add(jButton1);
-        jButton1.setBounds(0, 920, 240, 60);
-
-        jButton2.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/home.png"))); // NOI18N
-        jButton2.setText("Dashboard");
-        jButton2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton2.setIconTextGap(20);
-        jPanel2.add(jButton2);
-        jButton2.setBounds(0, 140, 240, 60);
-
-        jButton3.setBackground(new java.awt.Color(153, 204, 255));
-        jButton3.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 102, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/calendar.png"))); // NOI18N
-        jButton3.setText("Bookings");
-        jButton3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton3.setIconTextGap(20);
-        jButton3.addActionListener(this::jButton3ActionPerformed);
-        jPanel2.add(jButton3);
-        jButton3.setBounds(0, 200, 240, 60);
-
-        jButton4.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/car.png"))); // NOI18N
-        jButton4.setText("Vehicles");
-        jButton4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jButton4.setIconTextGap(18);
-        jButton4.addActionListener(this::jButton4ActionPerformed);
-        jPanel2.add(jButton4);
-        jButton4.setBounds(0, 260, 240, 60);
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/user.png"))); // NOI18N
-        jLabel4.setText("User");
-        jLabel4.setIconTextGap(20);
-        jPanel2.add(jLabel4);
-        jLabel4.setBounds(1510, 20, 160, 40);
-
-        jButton7.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/user.png"))); // NOI18N
-        jButton7.setText("Profile");
-        jButton7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jButton7.setIconTextGap(20);
-        jButton7.addActionListener(this::jButton7ActionPerformed);
-        jPanel2.add(jButton7);
-        jButton7.setBounds(0, 320, 240, 60);
+        jLabel3.setBounds(300, 50, 101, 29);
 
         jLabel64.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
         jLabel64.setText("Dashboard  >");
         jPanel2.add(jLabel64);
-        jLabel64.setBounds(270, 70, 90, 29);
+        jLabel64.setBounds(210, 50, 90, 29);
 
         jLabel65.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
         jLabel65.setText("Booking details  ");
         jPanel2.add(jLabel65);
-        jLabel65.setBounds(470, 70, 120, 29);
+        jLabel65.setBounds(410, 50, 120, 29);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -266,10 +212,10 @@ public class user_booking extends javax.swing.JFrame {
 
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/bmw x5.png"))); // NOI18N
         jPanel1.add(jLabel14);
-        jLabel14.setBounds(40, 30, 200, 90);
+        jLabel14.setBounds(40, 30, 200, 0);
 
         jPanel2.add(jPanel1);
-        jPanel1.setBounds(290, 130, 880, 190);
+        jPanel1.setBounds(210, 80, 880, 170);
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -277,7 +223,7 @@ public class user_booking extends javax.swing.JFrame {
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/bmw x5.png"))); // NOI18N
         jPanel3.add(jLabel12);
-        jLabel12.setBounds(30, 80, 200, 90);
+        jLabel12.setBounds(30, 80, 200, 0);
 
         jLabel11.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel11.setText("Booking Summary");
@@ -294,12 +240,12 @@ public class user_booking extends javax.swing.JFrame {
         jLabel17.setForeground(new java.awt.Color(39, 75, 146));
         jLabel17.setText("SUV");
         jPanel3.add(jLabel17);
-        jLabel17.setBounds(240, 100, 25, 16);
+        jLabel17.setBounds(240, 100, 40, 16);
 
         jLabel18.setFont(new java.awt.Font("Segoe UI Semilight", 1, 14)); // NOI18N
         jLabel18.setText("24 May 2024, 10:00 AM");
         jPanel3.add(jLabel18);
-        jLabel18.setBounds(280, 250, 170, 30);
+        jLabel18.setBounds(210, 250, 170, 30);
 
         jLabel19.setFont(new java.awt.Font("Segoe UI Semilight", 1, 14)); // NOI18N
         jLabel19.setText("Pick-off");
@@ -315,12 +261,12 @@ public class user_booking extends javax.swing.JFrame {
         jLabel21.setText("$0.00");
         jLabel21.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jPanel3.add(jLabel21);
-        jLabel21.setBounds(370, 400, 80, 30);
+        jLabel21.setBounds(300, 400, 80, 30);
 
         jLabel22.setFont(new java.awt.Font("Segoe UI Semilight", 1, 14)); // NOI18N
         jLabel22.setText("20 May 2024, 10:00 AM");
         jPanel3.add(jLabel22);
-        jLabel22.setBounds(280, 220, 170, 30);
+        jLabel22.setBounds(210, 220, 170, 30);
 
         jLabel23.setFont(new java.awt.Font("Segoe UI Semilight", 1, 14)); // NOI18N
         jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/info.png"))); // NOI18N
@@ -350,19 +296,19 @@ public class user_booking extends javax.swing.JFrame {
         jLabel27.setText("4 Days");
         jLabel27.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jPanel3.add(jLabel27);
-        jLabel27.setBounds(370, 280, 70, 30);
+        jLabel27.setBounds(300, 280, 70, 30);
 
         jLabel28.setFont(new java.awt.Font("Segoe UI Semilight", 1, 14)); // NOI18N
         jLabel28.setText("$80.00");
         jLabel28.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jPanel3.add(jLabel28);
-        jLabel28.setBounds(370, 330, 70, 30);
+        jLabel28.setBounds(300, 330, 70, 30);
 
         jLabel29.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel29.setText("$320.00");
         jLabel29.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jPanel3.add(jLabel29);
-        jLabel29.setBounds(360, 456, 70, 20);
+        jLabel29.setBounds(290, 460, 70, 20);
         jPanel3.add(jSeparator4);
         jSeparator4.setBounds(30, 440, 390, 20);
 
@@ -375,20 +321,21 @@ public class user_booking extends javax.swing.JFrame {
         jLabel31.setText("$320.00");
         jLabel31.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jPanel3.add(jLabel31);
-        jLabel31.setBounds(370, 370, 80, 30);
+        jLabel31.setBounds(300, 370, 80, 30);
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/Screenshot 2026-06-10 115737.png"))); // NOI18N
-        jButton5.setBorder(null);
-        jPanel3.add(jButton5);
-        jButton5.setBounds(50, 540, 320, 40);
+        CancelBooking_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Screenshot 2026-06-10 115718.png"))); // NOI18N
+        CancelBooking_Button.setText("jButton1");
+        CancelBooking_Button.addActionListener(this::CancelBooking_ButtonActionPerformed);
+        jPanel3.add(CancelBooking_Button);
+        CancelBooking_Button.setBounds(30, 510, 300, 40);
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/Screenshot 2026-06-10 115718.png"))); // NOI18N
-        jButton6.setBorder(null);
-        jPanel3.add(jButton6);
-        jButton6.setBounds(40, 490, 340, 40);
+        LeaveFeedback_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Screenshot 2026-06-10 115737.png"))); // NOI18N
+        LeaveFeedback_Button.setText("jButton1");
+        jPanel3.add(LeaveFeedback_Button);
+        LeaveFeedback_Button.setBounds(30, 560, 310, 40);
 
         jPanel2.add(jPanel3);
-        jPanel3.setBounds(1210, 130, 450, 640);
+        jPanel3.setBounds(1100, 120, 370, 640);
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -474,7 +421,7 @@ public class user_booking extends javax.swing.JFrame {
         jLabel47.setBounds(420, 80, 50, 50);
 
         jPanel2.add(jPanel4);
-        jPanel4.setBounds(290, 360, 880, 210);
+        jPanel4.setBounds(210, 260, 880, 190);
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -551,7 +498,7 @@ public class user_booking extends javax.swing.JFrame {
 
         jLabel74.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/automatic-transmission.png"))); // NOI18N
         jPanel5.add(jLabel74);
-        jLabel74.setBounds(50, 60, 35, 40);
+        jLabel74.setBounds(50, 60, 0, 40);
 
         jLabel75.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/gas-station.png"))); // NOI18N
         jPanel5.add(jLabel75);
@@ -570,7 +517,7 @@ public class user_booking extends javax.swing.JFrame {
         jLabel78.setBounds(560, 60, 43, 40);
 
         jPanel2.add(jPanel5);
-        jPanel5.setBounds(290, 600, 880, 220);
+        jPanel5.setBounds(210, 460, 880, 180);
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -622,7 +569,48 @@ public class user_booking extends javax.swing.JFrame {
         jLabel71.setBounds(730, 60, 100, 30);
 
         jPanel2.add(jPanel6);
-        jPanel6.setBounds(290, 850, 880, 140);
+        jPanel6.setBounds(210, 650, 880, 120);
+
+        jLabel72.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo.png"))); // NOI18N
+        jLabel72.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel2.add(jLabel72);
+        jLabel72.setBounds(0, 0, 204, 124);
+
+        DB.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        DB.setText("🏠 DashBoard  ");
+        DB.setBorderPainted(false);
+        DB.addActionListener(this::DBActionPerformed);
+        jPanel2.add(DB);
+        DB.setBounds(10, 140, 157, 28);
+
+        MyBookingButton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        MyBookingButton.setText("🗓️ My Bookings");
+        MyBookingButton.setBorderPainted(false);
+        MyBookingButton.addActionListener(this::MyBookingButtonActionPerformed);
+        jPanel2.add(MyBookingButton);
+        MyBookingButton.setBounds(10, 180, 164, 28);
+
+        Vehicles.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        Vehicles.setText("🚗 Vehicles      ");
+        Vehicles.setBorderPainted(false);
+        Vehicles.addActionListener(this::VehiclesActionPerformed);
+        jPanel2.add(Vehicles);
+        Vehicles.setBounds(10, 220, 153, 28);
+
+        Profilebutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        Profilebutton.setForeground(new java.awt.Color(51, 102, 255));
+        Profilebutton.setText("👤 Profile        ");
+        Profilebutton.setBorderPainted(false);
+        Profilebutton.addActionListener(this::ProfilebuttonActionPerformed);
+        jPanel2.add(Profilebutton);
+        Profilebutton.setBounds(10, 260, 150, 28);
+
+        Logoutbutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        Logoutbutton.setText("←] Logout     ");
+        Logoutbutton.setBorderPainted(false);
+        Logoutbutton.addActionListener(this::LogoutbuttonActionPerformed);
+        jPanel2.add(Logoutbutton);
+        Logoutbutton.setBounds(30, 740, 138, 28);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(0, 0, 1710, 1010);
@@ -630,21 +618,29 @@ public class user_booking extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void DBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DBActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_DBActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void MyBookingButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MyBookingButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_MyBookingButtonActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void VehiclesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VehiclesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_VehiclesActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void ProfilebuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilebuttonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_ProfilebuttonActionPerformed
+
+    private void LogoutbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogoutbuttonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LogoutbuttonActionPerformed
+
+    private void CancelBooking_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelBooking_ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CancelBooking_ButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -672,13 +668,13 @@ public class user_booking extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
+    private javax.swing.JButton CancelBooking_Button;
+    private javax.swing.JButton DB;
+    private javax.swing.JButton LeaveFeedback_Button;
+    private javax.swing.JButton Logoutbutton;
+    private javax.swing.JButton MyBookingButton;
+    private javax.swing.JButton Profilebutton;
+    private javax.swing.JButton Vehicles;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -712,7 +708,6 @@ public class user_booking extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
@@ -748,6 +743,7 @@ public class user_booking extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
     private javax.swing.JLabel jLabel73;
     private javax.swing.JLabel jLabel74;
     private javax.swing.JLabel jLabel75;

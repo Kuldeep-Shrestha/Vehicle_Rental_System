@@ -73,23 +73,26 @@ public class User_Dashboard extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        ViewDetails_Button = new javax.swing.JButton();
         jLabel55 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         jLabel40 = new javax.swing.JLabel();
+        BookaCar_Button = new javax.swing.JButton();
         jPanel11 = new javax.swing.JPanel();
         jLabel41 = new javax.swing.JLabel();
         jLabel42 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
         jLabel56 = new javax.swing.JLabel();
+        MyBookings_Button = new javax.swing.JButton();
         jPanel12 = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
         jLabel46 = new javax.swing.JLabel();
         jLabel47 = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
+        BrowseVehicles_Button = new javax.swing.JButton();
         jPanel13 = new javax.swing.JPanel();
         jLabel50 = new javax.swing.JLabel();
         jLabel51 = new javax.swing.JLabel();
@@ -399,9 +402,9 @@ public class User_Dashboard extends javax.swing.JFrame {
         jLabel23.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel23.setText("#B0123458");
 
-        jButton2.setBackground(new java.awt.Color(153, 153, 255));
-        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jButton2.setText("View Details");
+        ViewDetails_Button.setBackground(new java.awt.Color(153, 153, 255));
+        ViewDetails_Button.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        ViewDetails_Button.setText("View Details");
 
         jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/car image 12.JPG"))); // NOI18N
         jLabel55.setText("jLabel55");
@@ -417,6 +420,10 @@ public class User_Dashboard extends javax.swing.JFrame {
 
         jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Capture car.JPG"))); // NOI18N
 
+        BookaCar_Button.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BookaCar_Button.setText(">");
+        BookaCar_Button.addActionListener(this::BookaCar_ButtonActionPerformed);
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
@@ -429,6 +436,10 @@ public class User_Dashboard extends javax.swing.JFrame {
                     .addComponent(jLabel38)
                     .addComponent(jLabel37))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(BookaCar_Button)
+                .addContainerGap())
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -440,7 +451,9 @@ public class User_Dashboard extends javax.swing.JFrame {
                         .addComponent(jLabel37)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(72, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(BookaCar_Button)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabel41.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -455,6 +468,10 @@ public class User_Dashboard extends javax.swing.JFrame {
         jLabel56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/capture active.JPG"))); // NOI18N
         jLabel56.setText("jLabel56");
 
+        MyBookings_Button.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        MyBookings_Button.setText(">");
+        MyBookings_Button.addActionListener(this::MyBookings_ButtonActionPerformed);
+
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
         jPanel11Layout.setHorizontalGroup(
@@ -465,9 +482,12 @@ public class User_Dashboard extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel41)
-                    .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel11Layout.createSequentialGroup()
+                        .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(MyBookings_Button))
                     .addComponent(jLabel42))
-                .addContainerGap(49, Short.MAX_VALUE))
+                .addContainerGap(45, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -480,8 +500,10 @@ public class User_Dashboard extends javax.swing.JFrame {
                         .addComponent(jLabel42))
                     .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MyBookings_Button))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jLabel45.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -496,6 +518,10 @@ public class User_Dashboard extends javax.swing.JFrame {
         jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Capture users.JPG"))); // NOI18N
         jLabel48.setText("jLabel48");
 
+        BrowseVehicles_Button.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BrowseVehicles_Button.setText(">");
+        BrowseVehicles_Button.addActionListener(this::BrowseVehicles_ButtonActionPerformed);
+
         javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
         jPanel12.setLayout(jPanel12Layout);
         jPanel12Layout.setHorizontalGroup(
@@ -507,7 +533,10 @@ public class User_Dashboard extends javax.swing.JFrame {
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel45)
                     .addComponent(jLabel46, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel47))
+                    .addGroup(jPanel12Layout.createSequentialGroup()
+                        .addComponent(jLabel47)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BrowseVehicles_Button)))
                 .addGap(34, 34, 34))
         );
         jPanel12Layout.setVerticalGroup(
@@ -521,7 +550,9 @@ public class User_Dashboard extends javax.swing.JFrame {
                         .addComponent(jLabel46))
                     .addComponent(jLabel48, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel47)
+                .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel47)
+                    .addComponent(BrowseVehicles_Button))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -604,21 +635,23 @@ public class User_Dashboard extends javax.swing.JFrame {
                                         .addGap(41, 41, 41)
                                         .addComponent(jLabel23)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jButton2)))))
+                                        .addComponent(ViewDetails_Button)))))
                         .addContainerGap())))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel8Layout.createSequentialGroup()
+                        .addComponent(jLabel10)
+                        .addGap(249, 249, 249))
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(44, 44, 44)
                         .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(34, 34, 34)
                         .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(44, 44, 44)
-                        .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel10))
-                .addContainerGap())
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                        .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
         jPanel8Layout.setVerticalGroup(
             jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -639,7 +672,7 @@ public class User_Dashboard extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel8Layout.createSequentialGroup()
-                                .addComponent(jButton2)
+                                .addComponent(ViewDetails_Button)
                                 .addGap(1, 1, 1)
                                 .addComponent(jLabel21))
                             .addGroup(jPanel8Layout.createSequentialGroup()
@@ -653,12 +686,11 @@ public class User_Dashboard extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel10)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jPanel12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jPanel12, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel13, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel11, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel10, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -666,6 +698,7 @@ public class User_Dashboard extends javax.swing.JFrame {
         jLabel63.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         DB.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        DB.setForeground(new java.awt.Color(0, 102, 255));
         DB.setText("🏠 DashBoard  ");
         DB.setBorderPainted(false);
         DB.addActionListener(this::DBActionPerformed);
@@ -681,7 +714,6 @@ public class User_Dashboard extends javax.swing.JFrame {
         Vehicles.addActionListener(this::VehiclesActionPerformed);
 
         Profilebutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
-        Profilebutton.setForeground(new java.awt.Color(51, 102, 255));
         Profilebutton.setText("👤 Profile        ");
         Profilebutton.setBorderPainted(false);
         Profilebutton.addActionListener(this::ProfilebuttonActionPerformed);
@@ -816,6 +848,18 @@ public class User_Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ProfilebuttonActionPerformed
 
+    private void BookaCar_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BookaCar_ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BookaCar_ButtonActionPerformed
+
+    private void MyBookings_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MyBookings_ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MyBookings_ButtonActionPerformed
+
+    private void BrowseVehicles_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BrowseVehicles_ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BrowseVehicles_ButtonActionPerformed
+
     private void LogoutbuttonActionPerformed(java.awt.event.ActionEvent evt) {
     int confirm = JOptionPane.showConfirmDialog(this, "Are you sure you want to logout?", "Logout", JOptionPane.YES_NO_OPTION);
     if (confirm == JOptionPane.YES_OPTION) {
@@ -850,15 +894,18 @@ public class User_Dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BookaCar_Button;
+    private javax.swing.JButton BrowseVehicles_Button;
     private javax.swing.JButton DB;
     private javax.swing.JButton Logoutbutton;
     private javax.swing.JButton MyBookingButton;
+    private javax.swing.JButton MyBookings_Button;
     private javax.swing.JLabel Pfp;
     private javax.swing.JButton Profilebutton;
     private javax.swing.JLabel UserName;
     private javax.swing.JButton Vehicles;
+    private javax.swing.JButton ViewDetails_Button;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

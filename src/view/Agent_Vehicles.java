@@ -31,18 +31,11 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jButton5 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jComboBox2 = new javax.swing.JComboBox<>();
-        jButton6 = new javax.swing.JButton();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -52,55 +45,19 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jLabel34 = new javax.swing.JLabel();
         jButton10 = new javax.swing.JButton();
-        jLabel35 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
         jButton11 = new javax.swing.JButton();
-        jLabel40 = new javax.swing.JLabel();
-        jLabel41 = new javax.swing.JLabel();
-        jLabel42 = new javax.swing.JLabel();
-        jLabel43 = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
-        jLabel45 = new javax.swing.JLabel();
-        jLabel46 = new javax.swing.JLabel();
-        jLabel47 = new javax.swing.JLabel();
-        jLabel48 = new javax.swing.JLabel();
         jButton12 = new javax.swing.JButton();
-        jLabel49 = new javax.swing.JLabel();
-        jLabel50 = new javax.swing.JLabel();
-        jLabel51 = new javax.swing.JLabel();
-        jLabel52 = new javax.swing.JLabel();
-        jLabel53 = new javax.swing.JLabel();
-        jLabel54 = new javax.swing.JLabel();
-        jLabel55 = new javax.swing.JLabel();
-        jLabel56 = new javax.swing.JLabel();
         jButton13 = new javax.swing.JButton();
-        jLabel57 = new javax.swing.JLabel();
-        jLabel58 = new javax.swing.JLabel();
-        jLabel60 = new javax.swing.JLabel();
-        jLabel61 = new javax.swing.JLabel();
-        jLabel62 = new javax.swing.JLabel();
-        jLabel63 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        DB = new javax.swing.JButton();
+        MyBookingButton = new javax.swing.JButton();
+        Vehicles = new javax.swing.JButton();
+        Profilebutton = new javax.swing.JButton();
+        Logoutbutton = new javax.swing.JButton();
+        Pfp1 = new javax.swing.JLabel();
+        UserName1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -114,28 +71,17 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 51, 102));
         jLabel2.setText("My Vehicles");
         jPanel2.add(jLabel2);
-        jLabel2.setBounds(270, 20, 274, 58);
+        jLabel2.setBounds(220, 20, 274, 58);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
         jLabel3.setText("View and manage our vehicle fleet.");
         jPanel2.add(jLabel3);
-        jLabel3.setBounds(270, 70, 230, 29);
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/letter-a.png"))); // NOI18N
-        jLabel4.setText("Agent");
-        jLabel4.setIconTextGap(20);
-        jPanel2.add(jLabel4);
-        jLabel4.setBounds(1510, 20, 160, 40);
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bell.png"))); // NOI18N
-        jPanel2.add(jLabel5);
-        jLabel5.setBounds(1440, 20, 30, 40);
+        jLabel3.setBounds(220, 70, 230, 29);
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Screenshot 2026-06-05 212442.png"))); // NOI18N
         jPanel2.add(jLabel6);
-        jLabel6.setBounds(1340, 96, 350, 830);
+        jLabel6.setBounds(1180, 60, 340, 800);
 
         jButton5.setBackground(new java.awt.Color(28, 133, 255));
         jButton5.setFont(new java.awt.Font("Segoe UI Semibold", 0, 16)); // NOI18N
@@ -144,395 +90,179 @@ public class Agent_Vehicles extends javax.swing.JFrame {
         jButton5.setText("Add Vehicle");
         jButton5.addActionListener(this::jButton5ActionPerformed);
         jPanel2.add(jButton5);
-        jButton5.setBounds(1120, 120, 170, 40);
+        jButton5.setBounds(990, 120, 170, 40);
 
         jLabel7.setFont(new java.awt.Font("Segoe UI Semilight", 0, 14)); // NOI18N
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/search.png"))); // NOI18N
         jLabel7.setText("Search Vehicles by make, model, or number plate.....");
         jLabel7.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
         jPanel2.add(jLabel7);
-        jLabel7.setBounds(280, 220, 560, 50);
+        jLabel7.setBounds(230, 220, 560, 50);
 
         jComboBox1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "All Categories" }));
         jPanel2.add(jComboBox1);
-        jComboBox1.setBounds(1040, 220, 170, 50);
+        jComboBox1.setBounds(990, 220, 170, 50);
 
         jComboBox2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "All Status" }));
         jPanel2.add(jComboBox2);
-        jComboBox2.setBounds(860, 220, 170, 50);
-
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/menu-dots-vertical.png"))); // NOI18N
-        jButton6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
-        jPanel2.add(jButton6);
-        jButton6.setBounds(1230, 330, 4, 50);
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/szki.png"))); // NOI18N
-        jPanel2.add(jLabel8);
-        jLabel8.setBounds(280, 690, 200, 90);
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/nexon.png"))); // NOI18N
-        jPanel2.add(jLabel9);
-        jLabel9.setBounds(280, 820, 200, 90);
-
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/tyta can.png"))); // NOI18N
-        jPanel2.add(jLabel10);
-        jLabel10.setBounds(280, 430, 200, 90);
-
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/tata.png"))); // NOI18N
-        jPanel2.add(jLabel11);
-        jLabel11.setBounds(280, 560, 200, 90);
+        jComboBox2.setBounds(810, 220, 170, 50);
 
         jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bmw x5.png"))); // NOI18N
         jPanel2.add(jLabel12);
-        jLabel12.setBounds(280, 310, 200, 90);
+        jLabel12.setBounds(230, 310, 200, 90);
 
         jLabel13.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel13.setText("BMW  X5");
         jPanel2.add(jLabel13);
-        jLabel13.setBounds(510, 310, 70, 20);
+        jLabel13.setBounds(460, 310, 70, 20);
 
         jLabel14.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(153, 153, 153));
         jLabel14.setText("Black , 2024");
         jPanel2.add(jLabel14);
-        jLabel14.setBounds(510, 360, 80, 16);
+        jLabel14.setBounds(460, 360, 80, 16);
 
         jLabel16.setBackground(new java.awt.Color(153, 204, 255));
         jLabel16.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(39, 75, 146));
         jLabel16.setText("SUV");
         jPanel2.add(jLabel16);
-        jLabel16.setBounds(590, 310, 40, 16);
+        jLabel16.setBounds(540, 310, 40, 16);
 
         jLabel17.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(153, 153, 153));
         jLabel17.setText("ABCD1234");
         jPanel2.add(jLabel17);
-        jLabel17.setBounds(510, 340, 70, 16);
+        jLabel17.setBounds(460, 340, 70, 16);
 
         jLabel18.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(153, 153, 153));
         jLabel18.setText("Status");
         jPanel2.add(jLabel18);
-        jLabel18.setBounds(1090, 340, 70, 16);
+        jLabel18.setBounds(1040, 340, 70, 16);
 
         jLabel19.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(153, 153, 153));
         jLabel19.setText("Daily Rate");
         jPanel2.add(jLabel19);
-        jLabel19.setBounds(920, 340, 70, 16);
+        jLabel19.setBounds(870, 340, 70, 16);
 
         jLabel20.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(102, 102, 102));
         jLabel20.setText("$120.00");
         jPanel2.add(jLabel20);
-        jLabel20.setBounds(920, 360, 70, 16);
+        jLabel20.setBounds(870, 360, 70, 16);
 
         jLabel21.setBackground(new java.awt.Color(153, 204, 0));
         jLabel21.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(0, 102, 0));
         jLabel21.setText("Available");
         jPanel2.add(jLabel21);
-        jLabel21.setBounds(1090, 360, 60, 20);
-
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/filter.png"))); // NOI18N
-        jButton8.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
-        jPanel2.add(jButton8);
-        jButton8.setBounds(1230, 220, 4, 50);
-
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/menu-dots-vertical.png"))); // NOI18N
-        jButton9.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
-        jPanel2.add(jButton9);
-        jButton9.setBounds(1230, 460, 4, 50);
-
-        jLabel22.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel22.setText("Status");
-        jPanel2.add(jLabel22);
-        jLabel22.setBounds(1090, 470, 70, 16);
-
-        jLabel23.setBackground(new java.awt.Color(153, 204, 0));
-        jLabel23.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(0, 102, 0));
-        jLabel23.setText("Available");
-        jPanel2.add(jLabel23);
-        jLabel23.setBounds(1090, 490, 60, 20);
-
-        jLabel24.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel24.setText("$120.00");
-        jPanel2.add(jLabel24);
-        jLabel24.setBounds(920, 490, 70, 16);
-
-        jLabel25.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel25.setText("Daily Rate");
-        jPanel2.add(jLabel25);
-        jLabel25.setBounds(920, 470, 70, 16);
-
-        jLabel15.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel15.setText("Black , 2024");
-        jPanel2.add(jLabel15);
-        jLabel15.setBounds(510, 490, 80, 16);
-
-        jLabel26.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel26.setText("ABCD1234");
-        jPanel2.add(jLabel26);
-        jLabel26.setBounds(510, 470, 70, 16);
-
-        jLabel27.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel27.setText("BMW  X5");
-        jPanel2.add(jLabel27);
-        jLabel27.setBounds(510, 440, 70, 20);
-
-        jLabel28.setBackground(new java.awt.Color(153, 204, 255));
-        jLabel28.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel28.setForeground(new java.awt.Color(39, 75, 146));
-        jLabel28.setText("SUV");
-        jPanel2.add(jLabel28);
-        jLabel28.setBounds(590, 440, 40, 16);
-
-        jLabel29.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jLabel29.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel29.setText("Status");
-        jPanel2.add(jLabel29);
-        jLabel29.setBounds(1090, 470, 70, 16);
-
-        jLabel30.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel30.setText("Daily Rate");
-        jPanel2.add(jLabel30);
-        jLabel30.setBounds(920, 470, 70, 16);
-
-        jLabel31.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel31.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel31.setText("Black , 2024");
-        jPanel2.add(jLabel31);
-        jLabel31.setBounds(510, 490, 80, 16);
-
-        jLabel32.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel32.setText("BMW  X5");
-        jPanel2.add(jLabel32);
-        jLabel32.setBounds(510, 440, 70, 20);
-
-        jLabel33.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel33.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel33.setText("$120.00");
-        jPanel2.add(jLabel33);
-        jLabel33.setBounds(920, 490, 70, 16);
-
-        jLabel34.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel34.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel34.setText("ABCD1234");
-        jPanel2.add(jLabel34);
-        jLabel34.setBounds(510, 470, 70, 16);
+        jLabel21.setBounds(1040, 360, 60, 20);
 
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/menu-dots-vertical.png"))); // NOI18N
         jButton10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
         jPanel2.add(jButton10);
         jButton10.setBounds(1230, 460, 4, 50);
 
-        jLabel35.setBackground(new java.awt.Color(153, 204, 0));
-        jLabel35.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
-        jLabel35.setForeground(new java.awt.Color(0, 102, 0));
-        jLabel35.setText("Available");
-        jPanel2.add(jLabel35);
-        jLabel35.setBounds(1090, 490, 60, 20);
-
-        jLabel36.setBackground(new java.awt.Color(153, 204, 255));
-        jLabel36.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel36.setForeground(new java.awt.Color(39, 75, 146));
-        jLabel36.setText("SUV");
-        jPanel2.add(jLabel36);
-        jLabel36.setBounds(590, 440, 26, 16);
-
-        jLabel37.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel37.setText("Black , 2024");
-        jPanel2.add(jLabel37);
-        jLabel37.setBounds(510, 620, 80, 16);
-
-        jLabel38.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jLabel38.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel38.setText("Daily Rate");
-        jPanel2.add(jLabel38);
-        jLabel38.setBounds(920, 600, 70, 16);
-
-        jLabel39.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel39.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel39.setText("ABCD1234");
-        jPanel2.add(jLabel39);
-        jLabel39.setBounds(510, 600, 70, 16);
-
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/menu-dots-vertical.png"))); // NOI18N
         jButton11.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
         jPanel2.add(jButton11);
         jButton11.setBounds(1230, 590, 4, 50);
-
-        jLabel40.setBackground(new java.awt.Color(153, 204, 0));
-        jLabel40.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
-        jLabel40.setForeground(new java.awt.Color(0, 102, 0));
-        jLabel40.setText("Available");
-        jPanel2.add(jLabel40);
-        jLabel40.setBounds(1090, 620, 60, 20);
-
-        jLabel41.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel41.setText("BMW  X5");
-        jPanel2.add(jLabel41);
-        jLabel41.setBounds(510, 570, 70, 20);
-
-        jLabel42.setBackground(new java.awt.Color(153, 204, 255));
-        jLabel42.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel42.setForeground(new java.awt.Color(39, 75, 146));
-        jLabel42.setText("SUV");
-        jPanel2.add(jLabel42);
-        jLabel42.setBounds(590, 570, 40, 16);
-
-        jLabel43.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jLabel43.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel43.setText("Status");
-        jPanel2.add(jLabel43);
-        jLabel43.setBounds(1090, 600, 70, 16);
-
-        jLabel44.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel44.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel44.setText("$120.00");
-        jPanel2.add(jLabel44);
-        jLabel44.setBounds(920, 620, 70, 16);
-
-        jLabel45.setBackground(new java.awt.Color(153, 204, 255));
-        jLabel45.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel45.setForeground(new java.awt.Color(39, 75, 146));
-        jLabel45.setText("SUV");
-        jPanel2.add(jLabel45);
-        jLabel45.setBounds(590, 570, 26, 16);
-
-        jLabel46.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jLabel46.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel46.setText("Daily Rate");
-        jPanel2.add(jLabel46);
-        jLabel46.setBounds(920, 730, 70, 16);
-
-        jLabel47.setBackground(new java.awt.Color(153, 204, 255));
-        jLabel47.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel47.setForeground(new java.awt.Color(39, 75, 146));
-        jLabel47.setText("SUV");
-        jPanel2.add(jLabel47);
-        jLabel47.setBounds(590, 700, 40, 16);
-
-        jLabel48.setBackground(new java.awt.Color(153, 204, 255));
-        jLabel48.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel48.setForeground(new java.awt.Color(39, 75, 146));
-        jLabel48.setText("SUV");
-        jPanel2.add(jLabel48);
-        jLabel48.setBounds(590, 700, 26, 16);
 
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/menu-dots-vertical.png"))); // NOI18N
         jButton12.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
         jPanel2.add(jButton12);
         jButton12.setBounds(1230, 720, 4, 50);
 
-        jLabel49.setBackground(new java.awt.Color(153, 204, 0));
-        jLabel49.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
-        jLabel49.setForeground(new java.awt.Color(0, 102, 0));
-        jLabel49.setText("Available");
-        jPanel2.add(jLabel49);
-        jLabel49.setBounds(1090, 750, 60, 20);
-
-        jLabel50.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel50.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel50.setText("$120.00");
-        jPanel2.add(jLabel50);
-        jLabel50.setBounds(920, 750, 70, 16);
-
-        jLabel51.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jLabel51.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel51.setText("Status");
-        jPanel2.add(jLabel51);
-        jLabel51.setBounds(1090, 730, 70, 16);
-
-        jLabel52.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel52.setText("BMW  X5");
-        jPanel2.add(jLabel52);
-        jLabel52.setBounds(510, 700, 70, 20);
-
-        jLabel53.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel53.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel53.setText("ABCD1234");
-        jPanel2.add(jLabel53);
-        jLabel53.setBounds(510, 730, 70, 16);
-
-        jLabel54.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel54.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel54.setText("Black , 2024");
-        jPanel2.add(jLabel54);
-        jLabel54.setBounds(510, 750, 80, 16);
-
-        jLabel55.setBackground(new java.awt.Color(153, 204, 0));
-        jLabel55.setFont(new java.awt.Font("Segoe UI Symbol", 1, 12)); // NOI18N
-        jLabel55.setForeground(new java.awt.Color(0, 102, 0));
-        jLabel55.setText("Available");
-        jPanel2.add(jLabel55);
-        jLabel55.setBounds(1090, 880, 60, 20);
-
-        jLabel56.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel56.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel56.setText("ABCD1234");
-        jPanel2.add(jLabel56);
-        jLabel56.setBounds(510, 860, 70, 16);
-
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/menu-dots-vertical.png"))); // NOI18N
         jButton13.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(221, 238, 255), 2, true));
         jPanel2.add(jButton13);
         jButton13.setBounds(1230, 850, 4, 50);
 
-        jLabel57.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel57.setText("BMW  X5");
-        jPanel2.add(jLabel57);
-        jLabel57.setBounds(510, 830, 70, 20);
+        jPanel1.setLayout(null);
 
-        jLabel58.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jLabel58.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel58.setText("Daily Rate");
-        jPanel2.add(jLabel58);
-        jLabel58.setBounds(920, 860, 70, 16);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Logo.png"))); // NOI18N
+        jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(13, 5, 204, 124);
 
-        jLabel60.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel60.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel60.setText("Black , 2024");
-        jPanel2.add(jLabel60);
-        jLabel60.setBounds(510, 880, 80, 16);
+        DB.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        DB.setText("🏠 DashBoard  ");
+        DB.setBorderPainted(false);
+        DB.addActionListener(this::DBActionPerformed);
+        jPanel1.add(DB);
+        DB.setBounds(30, 160, 157, 28);
 
-        jLabel61.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel61.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel61.setText("$120.00");
-        jPanel2.add(jLabel61);
-        jLabel61.setBounds(920, 880, 70, 16);
+        MyBookingButton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        MyBookingButton.setText("🗓️ My Bookings");
+        MyBookingButton.setBorderPainted(false);
+        MyBookingButton.addActionListener(this::MyBookingButtonActionPerformed);
+        jPanel1.add(MyBookingButton);
+        MyBookingButton.setBounds(30, 210, 164, 28);
 
-        jLabel62.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
-        jLabel62.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel62.setText("Status");
-        jPanel2.add(jLabel62);
-        jLabel62.setBounds(1090, 860, 70, 16);
+        Vehicles.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        Vehicles.setForeground(new java.awt.Color(0, 102, 255));
+        Vehicles.setText("🚗 Vehicles      ");
+        Vehicles.setBorderPainted(false);
+        Vehicles.addActionListener(this::VehiclesActionPerformed);
+        jPanel1.add(Vehicles);
+        Vehicles.setBounds(30, 260, 153, 28);
 
-        jLabel63.setBackground(new java.awt.Color(153, 204, 255));
-        jLabel63.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel63.setForeground(new java.awt.Color(39, 75, 146));
-        jLabel63.setText("SUV");
-        jPanel2.add(jLabel63);
-        jLabel63.setBounds(600, 830, 30, 16);
+        Profilebutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        Profilebutton.setText("👤 Profile        ");
+        Profilebutton.setBorderPainted(false);
+        Profilebutton.addActionListener(this::ProfilebuttonActionPerformed);
+        jPanel1.add(Profilebutton);
+        Profilebutton.setBounds(30, 320, 150, 28);
+
+        Logoutbutton.setFont(new java.awt.Font("Segoe UI Emoji", 0, 18)); // NOI18N
+        Logoutbutton.setText("←] Logout     ");
+        Logoutbutton.setBorderPainted(false);
+        Logoutbutton.addActionListener(this::LogoutbuttonActionPerformed);
+        jPanel1.add(Logoutbutton);
+        Logoutbutton.setBounds(30, 740, 138, 28);
+
         jPanel2.add(jPanel1);
-        jPanel1.setBounds(0, 0, 230, 910);
+        jPanel1.setBounds(0, 0, 220, 910);
+
+        Pfp1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Agent_profile.jpg"))); // NOI18N
+        jPanel2.add(Pfp1);
+        Pfp1.setBounds(1340, 10, 50, 50);
+
+        UserName1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        UserName1.setText("Agent");
+        UserName1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        jPanel2.add(UserName1);
+        UserName1.setBounds(1400, 20, 64, 32);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(0, 0, 1710, 1010);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void LogoutbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogoutbuttonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LogoutbuttonActionPerformed
+
+    private void ProfilebuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilebuttonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ProfilebuttonActionPerformed
+
+    private void VehiclesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VehiclesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VehiclesActionPerformed
+
+    private void MyBookingButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MyBookingButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_MyBookingButtonActionPerformed
+
+    private void DBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DBActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DBActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
@@ -564,22 +294,24 @@ public class Agent_Vehicles extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton DB;
+    private javax.swing.JButton Logoutbutton;
+    private javax.swing.JButton MyBookingButton;
+    private javax.swing.JLabel Pfp1;
+    private javax.swing.JButton Profilebutton;
+    private javax.swing.JLabel UserName1;
+    private javax.swing.JButton Vehicles;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -587,54 +319,9 @@ public class Agent_Vehicles extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
-    private javax.swing.JLabel jLabel35;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel40;
-    private javax.swing.JLabel jLabel41;
-    private javax.swing.JLabel jLabel42;
-    private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
-    private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
-    private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
-    private javax.swing.JLabel jLabel53;
-    private javax.swing.JLabel jLabel54;
-    private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
-    private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel60;
-    private javax.swing.JLabel jLabel61;
-    private javax.swing.JLabel jLabel62;
-    private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
